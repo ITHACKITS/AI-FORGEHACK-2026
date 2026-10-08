@@ -377,9 +377,9 @@ def get_exposed_facilities_list(
             "arrival_time_most_likely_h": round(likely_h, 1) if likely_h is not None else None,
         }
 
-        # Rekomendasi aksi operasional pencegahan & evakuasi
+        # Rekomendasi aksi operasional pencegahan & evakuasi (sinkron dengan tier P90, P50, P05)
         if ftype == "school":
-            if prob >= 0.40:
+            if prob >= 0.90:
                 item["alert_level"] = "SIAGA TINGGI"
                 item["badge_color"] = "#ef4444"
                 item["recommendation"] = "ALIHKAN KE PJJ DARING (BELAJAR DARI RUMAH)"
@@ -387,7 +387,7 @@ def get_exposed_facilities_list(
                     f"Hentikan KBM tatap muka. Pulangkan siswa sebelum T+{item['arrival_time_earliest_h'] or 'segera'} jam "
                     f"atau alihkan langsung ke daring. Amankan ruang kelas dan tutup ventilasi."
                 )
-            elif prob >= 0.15:
+            elif prob >= 0.50:
                 item["alert_level"] = "WASPADA"
                 item["badge_color"] = "#f59e0b"
                 item["recommendation"] = "HENTIKAN AKTIVITAS LUAR RUANG (OUTDOOR)"
@@ -407,22 +407,73 @@ def get_exposed_facilities_list(
             ]
             eval_hospitals = same_landmass_hospitals if same_landmass_hospitals else hospital_eval_list
 
-            nearest_h = None
-            min_dist = float("inf")
-            nearest_safe_h = None
-            min_safe_dist = float("inf")
+            # Cari RS terdekat & RS rujukan aman minim dampak untuk evakuasi korban sekolah ini
+            # Menolak evakuasi yang memindahkan ambulans semakin dekat ke kawah aktif / menembus KRB pekat
+            fac_lat = fac["latitude"]
+            fac_lon = fac["longitude"]
+            fac_to_center = haversine_km(fac_lat, fac_lon, c_lat, c_lon)
+
+            best_safe_h = None
+            best_safe_score = float("inf")
+            nearest_any_h = None
+            min_any_dist = float("inf")
+            # Cari RS rujukan aman terdekat (prioritaskan 100% RS yang berstatus is_safe == True)
+            safe_pool = [h for h in eval_hospitals if h.get("is_safe")]
+            search_pool = safe_pool if safe_pool else eval_hospitals
 
             for h in eval_hospitals:
-                dist = haversine_km(fac["latitude"], fac["longitude"], h["latitude"], h["longitude"])
-                if dist < min_dist:
-                    min_dist = dist
-                    nearest_h = {**h, "distance_km": round(dist, 1)}
-                if h["is_safe"] and dist < min_safe_dist:
-                    min_safe_dist = dist
-                    nearest_safe_h = {**h, "distance_km": round(dist, 1)}
+                dist = haversine_km(fac_lat, fac_lon, h["latitude"], h["longitude"])
+                if dist < min_any_dist:
+                    min_any_dist = dist
+                    nearest_any_h = {**h, "distance_km": round(dist, 1)}
 
-            item["nearest_hospital"] = nearest_h
-            target_evac = nearest_safe_h or nearest_h
+            for h in search_pool:
+                h_lat = h["latitude"]
+                h_lon = h["longitude"]
+                dist = haversine_km(fac_lat, fac_lon, h_lat, h_lon)
+                h_to_center = haversine_km(h_lat, h_lon, c_lat, c_lon)
+                h_prob = h.get("exposure_probability", 0.0)
+
+                # Sampel 7 titik di koridor untuk memeriksa apakah jalur mendekati kawah aktif
+                corridor_min_crater = min(
+                    haversine_km(
+                        fac_lat + (i / 6.0) * (h_lat - fac_lat),
+                        fac_lon + (i / 6.0) * (h_lon - fac_lon),
+                        c_lat,
+                        c_lon
+                    )
+                    for i in range(7)
+                )
+
+                # 1. Penalti Incursion Kawah: Rute dilarang memindahkan ambulans mendekati kawah aktif (< 12 km)
+                crater_penalty = 0.0
+                if corridor_min_crater < 12.0:
+                    crater_penalty += (12.0 - corridor_min_crater) * 6.0
+                if h_to_center < fac_to_center - 2.0:
+                    crater_penalty += (fac_to_center - h_to_center) * 3.0
+
+                # 2. Penalti Paparan Bahaya RS
+                if h_prob >= 0.35:
+                    exp_penalty = 45.0 + (h_prob * 30.0)
+                elif h_prob >= 0.15:
+                    exp_penalty = h_prob * 10.0
+                else:
+                    exp_penalty = 0.0
+
+                score = dist + crater_penalty + exp_penalty
+
+                if score < best_safe_score:
+                    best_safe_score = score
+                    badge_desc = "[RUJUKAN AMAN] Koridor Bebas Bahaya" if h.get("is_safe") else "[TRIASE MINIM DAMPAK] Bebas Radius Bahaya"
+                    best_safe_h = {
+                        **h,
+                        "distance_km": round(dist, 1),
+                        "corridor_min_crater_km": round(corridor_min_crater, 1),
+                        "status_badge": badge_desc
+                    }
+
+            item["nearest_hospital"] = nearest_any_h
+            target_evac = best_safe_h or nearest_any_h
             item["nearest_safe_hospital"] = target_evac
             if target_evac:
                 item["evacuation_protocol"] = (
@@ -434,7 +485,7 @@ def get_exposed_facilities_list(
             schools.append(item)
 
         elif ftype == "healthcare":
-            if prob >= 0.40:
+            if prob >= 0.90:
                 item["alert_level"] = "SIAGA DARURAT"
                 item["badge_color"] = "#ef4444"
                 item["recommendation"] = "SIAPKAN RUANG ISOLASI & NEBULIZER ISPA"
@@ -442,11 +493,16 @@ def get_exposed_facilities_list(
                     f"Siapkan stok cadangan O2 dan obat pernapasan sebelum T+{item['arrival_time_earliest_h'] or 'segera'} jam. "
                     f"Wajibkan APD masker N95 untuk seluruh nakes dan pasien."
                 )
-            else:
+            elif prob >= 0.50:
                 item["alert_level"] = "WASPADA FASKES"
                 item["badge_color"] = "#f59e0b"
                 item["recommendation"] = "INVENTARISASI LOGISTIK PERNAPASAN"
                 item["action_detail"] = "Pastikan masker medis partikulat dan nebulizer siap operasi."
+            else:
+                item["alert_level"] = "SIAGA DINI FASKES"
+                item["badge_color"] = "#10b981"
+                item["recommendation"] = "MONITORING POSKO KESEHATAN"
+                item["action_detail"] = "Kesiapsiagaan pemantauan keluhan pernapasan warga berkala."
             healthcare.append(item)
 
         else:

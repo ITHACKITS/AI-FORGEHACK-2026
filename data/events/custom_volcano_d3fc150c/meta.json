@@ -1,0 +1,22 @@
+{
+  "event_id": "custom_volcano_d3fc150c",
+  "hazard": "volcano",
+  "name": "Kustom Tangkuban Perahu",
+  "start_utc": "2026-10-08T15:36:32.416145+00:00",
+  "duration_h": 24.0,
+  "column_height_km": 6.0,
+  "vent_elevation_m": 800.0,
+  "coordinates": {
+    "latitude": -6.76,
+    "longitude": 107.6
+  },
+  "bbox": [
+    106.89999999999999,
+    -7.46,
+    108.3,
+    -6.06
+  ],
+  "source": "Koordinat Kustom Pengguna (Interaktif)",
+  "members_source": "open_meteo_live_forecast_api",
+  "n_members": 5
+}

@@ -1,0 +1,22 @@
+{
+  "event_id": "custom_fire_87a1e949",
+  "hazard": "fire",
+  "name": "Kustom Lahan Gambut Pontianak",
+  "start_utc": "2026-10-08T15:36:51.953775+00:00",
+  "duration_h": 24.0,
+  "column_height_km": null,
+  "vent_elevation_m": null,
+  "coordinates": {
+    "latitude": -0.15,
+    "longitude": 109.45
+  },
+  "bbox": [
+    108.75,
+    -0.85,
+    110.15,
+    0.5499999999999999
+  ],
+  "source": "Koordinat Kustom Pengguna (Interaktif)",
+  "members_source": "open_meteo_live_forecast_api",
+  "n_members": 5
+}

@@ -15,7 +15,7 @@ from typing import Any, Dict, List
 import numpy as np
 import rasterio.features
 import scipy.ndimage
-from shapely.geometry import mapping, shape
+from shapely.geometry import Polygon, mapping, shape
 from shapely.ops import unary_union
 
 from app.engine.grid import SimulationGrid
@@ -27,6 +27,21 @@ def compute_ensemble_probabilities(member_masks: np.ndarray) -> np.ndarray:
     Mengembalikan array (n_lat, n_lon) dengan nilai 0.0 - 1.0.
     """
     return np.mean(member_masks.astype(float), axis=0)
+
+
+def fill_polygon_holes(geom):
+    """
+    Menghilangkan rongga/lubang interior pada poligon sehingga awan abu/asap berupa
+    footprint padat berkesinambungan tanpa lubang-lubang di tengah yang dapat membingungkan pengguna.
+    """
+    if geom.is_empty:
+        return geom
+    if geom.geom_type == "Polygon":
+        return Polygon(geom.exterior)
+    elif geom.geom_type == "MultiPolygon":
+        filled = [Polygon(p.exterior) for p in geom.geoms if not p.is_empty]
+        return unary_union(filled)
+    return geom
 
 
 def mask_to_geojson_features(
@@ -43,28 +58,30 @@ def mask_to_geojson_features(
     if not np.any(mask):
         return []
 
-    # Buat affine transform dari grid reguler
+    # Buat affine transform dari dimensi aktual masker (mendukung sub-grid upsampled)
     flipped_mask = np.flipud(mask).astype(np.uint8)
+    n_h, n_w = mask.shape
 
     transform = rasterio.transform.from_bounds(
         west=grid.lon_min,
         south=grid.lat_min,
         east=grid.lon_max,
         north=grid.lat_max,
-        width=grid.n_lon,
-        height=grid.n_lat,
+        width=n_w,
+        height=n_h,
     )
 
     shapes_gen = rasterio.features.shapes(flipped_mask, mask=(flipped_mask == 1), transform=transform)
 
     polygons = []
+    # Filter bintik derau terisolasi kecil (proporsional dengan resolusi grid)
+    min_poly_area = (grid.resolution_deg ** 2) * 0.15
     for geom_dict, val in shapes_gen:
         if val == 1:
             poly = shape(geom_dict)
             if not poly.is_valid:
                 poly = poly.buffer(0)
-            # Filter bintik derau terisolasi kecil
-            if not poly.is_empty and poly.area > 0.0005:
+            if not poly.is_empty and poly.area > min_poly_area:
                 polygons.append(poly)
 
     if not polygons:
@@ -75,10 +92,15 @@ def mask_to_geojson_features(
     if merged.is_empty:
         return []
 
-    # Penghalusan kontur: buffer closing & penyederhanaan topologis
-    # Mengeliminasi sudut siku-siku 90 derajat raster pixel menjadi kontur sebaran alami
-    smoothed = merged.buffer(0.012).buffer(-0.010).simplify(0.006, preserve_topology=True)
-    final_geom = smoothed if (not smoothed.is_empty and smoothed.is_valid) else merged
+    # Penghalusan kontur aerodinamis & kurva organik adaptif:
+    # Mengeliminasi sudut siku-siku 90 derajat raster pixel menjadi kontur sebaran abu/asap alami
+    res = grid.resolution_deg
+    buf_out = res * 0.40
+    buf_in = res * 0.35
+    simp = res * 0.06
+    smoothed = merged.buffer(buf_out).buffer(-buf_in).simplify(simp, preserve_topology=True)
+    raw_geom = smoothed if (not smoothed.is_empty and smoothed.is_valid) else merged
+    final_geom = fill_polygon_holes(raw_geom)
 
     feature = {
         "type": "Feature",
@@ -116,24 +138,60 @@ def aggregate_tiers_for_hour(
     # Mengeliminasi artefak kotak kaku pada tepi domain komputasi dan menjamin ujung plume menutup aerodinamis alami
     if np.any(prob_grid > 0):
         edge_mask = np.ones_like(prob_grid)
-        edge_mask[0:3, :] = 0.0
-        edge_mask[-3:, :] = 0.0
-        edge_mask[:, 0:3] = 0.0
-        edge_mask[:, -3:] = 0.0
-        edge_weight = scipy.ndimage.gaussian_filter(edge_mask, sigma=1.8, mode="constant", cval=0.0)
+        edge_mask[0:2, :] = 0.0
+        edge_mask[-2:, :] = 0.0
+        edge_mask[:, 0:2] = 0.0
+        edge_mask[:, -2:] = 0.0
+        edge_weight = scipy.ndimage.gaussian_filter(edge_mask, sigma=1.5, mode="constant", cval=0.0)
         smoothed_prob = scipy.ndimage.gaussian_filter(prob_grid * edge_weight, sigma=1.2, mode="constant", cval=0.0)
-    else:
-        smoothed_prob = prob_grid
 
-    # 2. Tiga tingkat dengan jaminan subset matematis: min ⊆ mid ⊆ max
-    mask_min = smoothed_prob >= th_min
-    mask_mid = (smoothed_prob >= th_mid) | mask_min
-    mask_max = (smoothed_prob >= th_max) | mask_mid
+        # 2. Sub-Grid Bicubic Upsampling (Zoom orde 3) untuk menghasilkan medan kontur sebaran yang meliuk alami
+        # Mengeliminasi artefak undakan raster kotak-kotak 5km menjadi kontur aerodinamis sub-pixel
+        zoom_factor = 3
+        up_prob = scipy.ndimage.zoom(smoothed_prob, zoom=zoom_factor, order=3)
+        up_prob = np.clip(up_prob, 0.0, 1.0)
+    else:
+        up_prob = prob_grid
+
+    # 3. Tiga tingkat dengan jaminan subset matematis: min ⊆ mid ⊆ max
+    mask_min = up_prob >= th_min
+    mask_mid = (up_prob >= th_mid) | mask_min
+    mask_max = (up_prob >= th_max) | mask_mid
+
+    feat_max = mask_to_geojson_features(mask_max, grid, "maximum", hour, th_max)
+    feat_mid = mask_to_geojson_features(mask_mid, grid, "mid", hour, th_mid)
+    feat_min = mask_to_geojson_features(mask_min, grid, "minimum", hour, th_min)
+
+    # Buat geometri cincin/band diskret berbatas ganda:
+    # - maximum (Siaga Dini): dipotong oleh mid (memiliki batas luar P05 dan batas dalam P50)
+    # - mid (Waspada): dipotong oleh minimum (memiliki batas luar P50 dan batas dalam P90)
+    # - minimum (Sangat Tinggi): inti P90
+    if feat_max and feat_mid:
+        try:
+            poly_max = shape(feat_max[0]["geometry"])
+            poly_mid = shape(feat_mid[0]["geometry"])
+            if not poly_max.is_empty and not poly_mid.is_empty:
+                diff_max = poly_max.difference(poly_mid.buffer(0))
+                if not diff_max.is_empty and diff_max.is_valid:
+                    feat_max[0]["geometry"] = mapping(diff_max)
+        except Exception:
+            pass
+
+    if feat_mid and feat_min:
+        try:
+            poly_mid = shape(feat_mid[0]["geometry"])
+            poly_min = shape(feat_min[0]["geometry"])
+            if not poly_mid.is_empty and not poly_min.is_empty:
+                diff_mid = poly_mid.difference(poly_min.buffer(0))
+                if not diff_mid.is_empty and diff_mid.is_valid:
+                    feat_mid[0]["geometry"] = mapping(diff_mid)
+        except Exception:
+            pass
 
     features = []
-    features.extend(mask_to_geojson_features(mask_max, grid, "maximum", hour, th_max))
-    features.extend(mask_to_geojson_features(mask_mid, grid, "mid", hour, th_mid))
-    features.extend(mask_to_geojson_features(mask_min, grid, "minimum", hour, th_min))
+    features.extend(feat_max)
+    features.extend(feat_mid)
+    features.extend(feat_min)
 
     return {
         "type": "FeatureCollection",

@@ -132,9 +132,9 @@ def generate_emergency_advisory(
         }
     ]
 
-    # 3. Protokol Satuan Pendidikan (Sekolah & SPAB)
-    pjj_schools_count = sum(1 for s in schools if s.get("exposure_probability", 0) >= 0.40)
-    outdoor_schools_count = sum(1 for s in schools if 0.15 <= s.get("exposure_probability", 0) < 0.40)
+    # 3. Protokol Satuan Pendidikan (Sekolah & SPAB) - Sinkron P90, P50, P05
+    pjj_schools_count = sum(1 for s in schools if s.get("exposure_probability", 0) >= 0.90)
+    outdoor_schools_count = sum(1 for s in schools if 0.50 <= s.get("exposure_probability", 0) < 0.90)
     
     school_guidance = {
         "summary": (
@@ -144,12 +144,12 @@ def generate_emergency_advisory(
         ),
         "protocols": [
             {
-                "tier": "Zona Siaga Tinggi (Peluang Paparan ≥ 40%)",
+                "tier": "Zona Inti Bahaya / P90 (Peluang Paparan ≥ 90%)",
                 "mandate": "ALIHKAN KE PJJ DARING PENUH (BELAJAR DARI RUMAH)",
                 "action": "Hentikan KBM tatap muka langsung. Pulangkan siswa sebelum kepulan abu tiba atau instruksikan belajar dari rumah. Tutup ventilasi ruang kelas."
             },
             {
-                "tier": "Zona Waspada (Peluang Paparan 15% - 39%)",
+                "tier": "Zona Waspada / P50 (Peluang Paparan 50% - 89%)",
                 "mandate": "HENTIKAN SELURUH AKTIVITAS LUAR RUANG (OUTDOOR)",
                 "action": "Larang olahraga, upacara bendera, dan istirahat di halaman. Wajibkan siswa dan guru mengenakan masker N95 di dalam gedung."
             },

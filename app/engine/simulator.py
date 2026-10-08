@@ -63,6 +63,12 @@ class SimulationRunner:
         wind_v_arr = weather_data.get("wind_v")
         precip_arr = weather_data.get("precip")
 
+        # Durasi emisi aktif (gunung & kebakaran)
+        duration_h = float(
+            self.request.overrides.get("duration_h", event_meta.get("duration_h", 24.0))
+            if self.request.overrides else event_meta.get("duration_h", 24.0)
+        )
+
         # 2. Persiapan Parameter Sumber
         if hazard == "volcano":
             vent_lat = float(event_meta.get("coordinates", {}).get("latitude", -6.102))
@@ -75,10 +81,6 @@ class SimulationRunner:
             else:
                 plume_top_asl_km = float(event_meta.get("plume_top_asl_km") or 10.0)
 
-            duration_h = float(
-                self.request.overrides.get("duration_h", event_meta.get("duration_h", 25.0))
-                if self.request.overrides else event_meta.get("duration_h", 25.0)
-            )
             peak_phase_h = float(event_meta.get("peak_phase_duration_h", 6.0))
 
             # D24: H di atas kawah
@@ -138,7 +140,7 @@ class SimulationRunner:
                         )
                         particle_cursor = (particle_cursor + inserted) % (max_particles_capacity - particles_per_step)
                 else:
-                    if hotspots:
+                    if hotspots and (current_time_s < duration_h * 3600.0):
                         inserted = generate_fire_particles_per_step(
                             p=particles,
                             start_slot=particle_cursor,
@@ -243,6 +245,15 @@ class SimulationRunner:
                 th_mid=th_mid,
                 th_max=th_max,
             )
+
+        # Jamin ketersediaan langkah jam T+48 (akhir horizon) agar tidak kosong saat slider mencapai ujung
+        if horizon_hours not in hourly_tiers_geojson and (horizon_hours - 1) in hourly_tiers_geojson:
+            import copy
+            h_end = copy.deepcopy(hourly_tiers_geojson[horizon_hours - 1])
+            h_end["properties"]["hour"] = horizon_hours
+            for feat in h_end.get("features", []):
+                feat["properties"]["hour"] = horizon_hours
+            hourly_tiers_geojson[horizon_hours] = h_end
 
         earliest_arr, likely_arr = compute_arrival_time_grid(hourly_exposure_masks)
 

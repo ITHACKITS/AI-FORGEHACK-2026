@@ -96,20 +96,27 @@ class OpenMeteoIngest:
         base_precip = np.array(hourly.get("precipitation", [0.0] * n_steps), dtype=float)
 
         # Handle overrides jika ada (mode experiment)
-        if overrides and "wind" in overrides and overrides["wind"]:
-            wind_ovr = overrides["wind"]
-            if wind_ovr.get("reverse"):
+        if overrides:
+            if overrides.get("wind_reverse_troposphere"):
                 base_dir = (base_dir + 180.0) % 360.0
-            if wind_ovr.get("rotate_deg") is not None:
-                base_dir = (base_dir + float(wind_ovr["rotate_deg"])) % 360.0
+            elif "wind" in overrides and overrides["wind"]:
+                wind_ovr = overrides["wind"]
+                if wind_ovr.get("reverse"):
+                    base_dir = (base_dir + 180.0) % 360.0
+                if wind_ovr.get("rotate_deg") is not None:
+                    base_dir = (base_dir + float(wind_ovr["rotate_deg"])) % 360.0
 
-        if overrides and "rain" in overrides and overrides["rain"]:
-            rain_ovr = overrides["rain"]
-            intensity = float(rain_ovr.get("intensity_mm_h", 10.0))
-            duration = int(rain_ovr.get("duration_h", 4))
-            start_h = int(rain_ovr.get("start_h", 6))
-            end_h = min(n_steps, start_h + duration)
-            base_precip[start_h:end_h] += intensity
+            if "rain_scavenging_mm_h" in overrides and overrides["rain_scavenging_mm_h"]:
+                intensity = float(overrides["rain_scavenging_mm_h"])
+                if intensity > 0:
+                    base_precip[:] += intensity
+            elif "rain" in overrides and overrides["rain"]:
+                rain_ovr = overrides["rain"]
+                intensity = float(rain_ovr.get("intensity_mm_h", 10.0))
+                duration = int(rain_ovr.get("duration_h", 4))
+                start_h = int(rain_ovr.get("start_h", 6))
+                end_h = min(n_steps, start_h + duration)
+                base_precip[start_h:end_h] += intensity
 
         # Siapkan array per anggota (n_members, n_steps)
         # Konversi speed dan direction ke komponen U dan V (angin bertiup DARI arah dir)
