@@ -1,0 +1,29 @@
+{
+  "event_id": "semeru",
+  "hazard": "volcano",
+  "name": "Erupsi G. Semeru (Jawa Timur)",
+  "start_utc": "2026-09-05T00:00:00Z",
+  "end_utc": "2026-09-06T12:00:00Z",
+  "duration_h": 24.0,
+  "alert_level_at_event": "Level III (Siaga)",
+  "restricted_radius_km": 5.0,
+  "eruption_style": "abu vulkanik dan emisi gas",
+  "column_height_km": 4.5,
+  "plume_top_asl_km": 8.18,
+  "vent_elevation_m": 3676.0,
+  "peak_phase_duration_h": 4.0,
+  "coordinates": {
+    "latitude": -8.108,
+    "longitude": 112.922
+  },
+  "bbox": [
+    111.922,
+    -9.108,
+    113.922,
+    -7.1080000000000005
+  ],
+  "source": "PVMBG Badan Geologi ESDM",
+  "members_source": "open_meteo_ensemble",
+  "n_members": 51,
+  "disclaimer": "Simulasi ini adalah estimasi ilmiah untuk kesiapsiagaan darurat dan analisis dampak, BUKAN peringatan resmi. Ikuti instruksi resmi dari PVMBG Badan Geologi, BMKG, dan BPBD."
+}

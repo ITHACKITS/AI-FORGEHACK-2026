@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_manupeu_sumba",
+  "hazard": "fire",
+  "name": "Savana TN Manupeu Tanah Daru (Sumba Timur, NTT)",
+  "province": "Nusa Tenggara Timur",
+  "region": "Bali & Nusa Tenggara",
+  "forest_type": "Padang Savana Tropis Luas",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -9.75,
+    "longitude": 119.85,
+    "center_lat": -9.75,
+    "center_lon": 119.85
+  },
+  "bbox": [
+    119.15,
+    -10.45,
+    120.55,
+    -9.05
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 1,
+  "description": "Lanskap sabana terluas di NTT dengan frekuensi kebakaran padang rumput tahunan yang sangat tinggi.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

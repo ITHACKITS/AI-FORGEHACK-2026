@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_padang_sugihan",
+  "hazard": "fire",
+  "name": "SM Padang Sugihan (OKI, Sumsel)",
+  "province": "Sumatera Selatan",
+  "region": "Sumatera",
+  "forest_type": "Suaka Rawa Gambut Dalam",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -3.22,
+    "longitude": 105.12,
+    "center_lat": -3.22,
+    "center_lon": 105.12
+  },
+  "bbox": [
+    104.42,
+    -3.92,
+    105.82,
+    -2.52
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 60,
+  "description": "Episentrum karhutla gambut Sumatera Selatan yang berdampak langsung pada indeks ISPU Kota Palembang.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

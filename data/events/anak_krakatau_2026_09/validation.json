@@ -1,0 +1,28 @@
+{
+  "event_id": "anak_krakatau_2026_09",
+  "hazard": "volcano",
+  "resolution": "district",
+  "validation_note": "Validasi kasar pada tingkat kabupaten dan dampak penerbangan bandara.",
+  "members_source": "synthetic_from_mean_spread",
+  "reported_districts_evaluated": [
+    "Kabupaten Lampung Selatan",
+    "Kabupaten Tanggamus",
+    "Kabupaten Pandeglang"
+  ],
+  "airports_evaluated": [
+    {
+      "name": "Bandara Radin Inten II (TKG)",
+      "evaluation_type": "aviation_impact_separate"
+    }
+  ],
+  "vertical_dispersion_directional_check": {
+    "upper_layer_status": "consistent_with_d05b_southwest",
+    "mid_layer_status": "consistent_with_d05b_west",
+    "lower_layer_status": "consistent_with_d05b_east"
+  },
+  "metrics": {
+    "fractions_skill_score": null,
+    "district_hit_rate": null,
+    "confidence_caveat": "Anggota ensemble bersifat sintetis dari mean/spread, sehingga tidak boleh dijadikan klaim akurasi presisi."
+  }
+}

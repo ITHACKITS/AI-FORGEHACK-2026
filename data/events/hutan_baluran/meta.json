@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_baluran",
+  "hazard": "fire",
+  "name": "Sabana Bekol - TN Baluran (Situbondo, Jatim)",
+  "province": "Jawa Timur",
+  "region": "Jawa",
+  "forest_type": "Padang Savana Alami & Hutan Musim",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -7.83,
+    "longitude": 114.38,
+    "center_lat": -7.83,
+    "center_lon": 114.38
+  },
+  "bbox": [
+    113.68,
+    -8.53,
+    115.08,
+    -7.13
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 6,
+  "description": "'Africa van Java', ekosistem sabana tropis kering dengan siklus kebakaran alami dan pembakaran liar.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

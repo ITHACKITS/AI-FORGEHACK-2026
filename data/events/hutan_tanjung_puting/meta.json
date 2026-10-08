@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_tanjung_puting",
+  "hazard": "fire",
+  "name": "TN Tanjung Puting (Kotawaringin Barat, Kalteng)",
+  "province": "Kalimantan Tengah",
+  "region": "Kalimantan",
+  "forest_type": "Hutan Rawa Gambut & Hutan Tropis",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -3.05,
+    "longitude": 111.95,
+    "center_lat": -3.05,
+    "center_lon": 111.95
+  },
+  "bbox": [
+    111.25,
+    -3.75,
+    112.65,
+    -2.35
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 37,
+  "description": "Cagar biosfer dunia habitat orangutan dengan kawasan gambut pesisir rawan rambatan api.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_banjarbaru",
+  "hazard": "fire",
+  "name": "Lahan Gambut Landasan Ulin (Banjarbaru, Kalsel)",
+  "province": "Kalimantan Selatan",
+  "region": "Kalimantan",
+  "forest_type": "Rawa Gambut Pesisir Kering",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -3.48,
+    "longitude": 114.78,
+    "center_lat": -3.48,
+    "center_lon": 114.78
+  },
+  "bbox": [
+    114.08,
+    -4.18,
+    115.48,
+    -2.78
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 39,
+  "description": "Lokasi langganan kabut asap tebal yang mengganggu operasional penerbangan Bandara Syamsudin Noor.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

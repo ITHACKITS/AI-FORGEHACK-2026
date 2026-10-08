@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_berbak",
+  "hazard": "fire",
+  "name": "TN Berbak (Tanjung Jabung Timur, Jambi)",
+  "province": "Jambi",
+  "region": "Sumatera",
+  "forest_type": "Rawa Gambut Terluas Asia Tenggara",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -1.42,
+    "longitude": 104.28,
+    "center_lat": -1.42,
+    "center_lon": 104.28
+  },
+  "bbox": [
+    103.58,
+    -2.12,
+    104.98,
+    -0.72
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 60,
+  "description": "Kawasan situs Ramsar lahan basah gambut dengan endapan bahan bakar organik tebal.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

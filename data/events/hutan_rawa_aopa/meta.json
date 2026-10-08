@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_rawa_aopa",
+  "hazard": "fire",
+  "name": "Sabana TN Rawa Aopa Watumohai (Konawe, Sultra)",
+  "province": "Sulawesi Tenggara",
+  "region": "Sulawesi",
+  "forest_type": "Sabana Lahan Basah Alami",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -4.45,
+    "longitude": 121.95,
+    "center_lat": -4.45,
+    "center_lon": 121.95
+  },
+  "bbox": [
+    121.25,
+    -5.15,
+    122.65,
+    -3.75
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 0,
+  "description": "Ekosistem sabana dataran rendah terluas di Sulawesi yang mengalami kebakaran musiman berkala.",
+  "data_status": {
+    "hotspots": "zero_active_hotspots_in_radius",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

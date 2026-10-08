@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_gunung_palung",
+  "hazard": "fire",
+  "name": "TN Gunung Palung (Ketapang, Kalbar)",
+  "province": "Kalimantan Barat",
+  "region": "Kalimantan",
+  "forest_type": "Hutan Rawa Gambut & Perbukitan",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -1.25,
+    "longitude": 110.15,
+    "center_lat": -1.25,
+    "center_lon": 110.15
+  },
+  "bbox": [
+    109.45,
+    -1.95,
+    110.85,
+    -0.55
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 11,
+  "description": "Kawasan perbukitan dan rawa gambut di Ketapang yang rentan kebakaran di musim kemarau panjang.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "event_id": "live_kalimantan",
+  "hazard": "fire",
+  "status": "not_testable",
+  "reason": "Stasiun pemantau kualitas udara kontinu (ISPU/OpenAQ) dengan riwayat data sinkron tidak tersedia di sekitar pusat titik api untuk periode ini.",
+  "validation_note": "Tanpa data stasiun pembanding, model tidak mengklaim akurasi mutlak dan disajikan sebagai simulasi dispersi skenario."
+}

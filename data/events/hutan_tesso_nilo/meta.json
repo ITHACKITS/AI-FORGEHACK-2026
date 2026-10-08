@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_tesso_nilo",
+  "hazard": "fire",
+  "name": "TN Tesso Nilo (Pelalawan, Riau)",
+  "province": "Riau",
+  "region": "Sumatera",
+  "forest_type": "Hutan Dataran Rendah & Gambut",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -0.08,
+    "longitude": 101.62,
+    "center_lat": -0.08,
+    "center_lon": 101.62
+  },
+  "bbox": [
+    100.92,
+    -0.78,
+    102.32,
+    0.62
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 1,
+  "description": "Kawasan konservasi gajah sumatera yang kerap dilanda pembukaan lahan dan kebakaran gambut.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

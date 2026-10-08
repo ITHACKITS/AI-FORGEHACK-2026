@@ -1,0 +1,24 @@
+{
+  "event_id": "marapi_sumatera",
+  "hazard": "volcano",
+  "name": "Erupsi Gunung Marapi (Sumatera Barat)",
+  "start_utc": "2026-09-08T06:00:00Z",
+  "end_utc": "2026-09-09T18:00:00Z",
+  "duration_h": 24.0,
+  "alert_level_at_event": "III (Siaga)",
+  "restricted_radius_km": 4.5,
+  "eruption_style": "eksplosif freatik dan abu vulkanik tebal",
+  "column_height_km": 3.0,
+  "plume_top_asl_km": 5.9,
+  "vent_elevation_m": 2891.0,
+  "peak_phase_duration_h": 4.0,
+  "coordinates": {
+    "latitude": -0.381,
+    "longitude": 100.473
+  },
+  "bbox": [99.8, -1.0, 101.1, 0.2],
+  "source": "Pos Pengamatan G. Marapi PVMBG Badan Geologi",
+  "members_source": "open_meteo_ensemble",
+  "n_members": 51,
+  "disclaimer": "Simulasi ini adalah estimasi ilmiah untuk kesiapsiagaan dan pembelajaran, BUKAN peringatan resmi. Ikuti instruksi resmi dari PVMBG, BMKG, dan BPBD."
+}

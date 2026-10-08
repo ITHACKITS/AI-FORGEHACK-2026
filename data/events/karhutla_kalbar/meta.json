@@ -1,0 +1,27 @@
+{
+  "event_id": "karhutla_kalbar",
+  "hazard": "fire",
+  "name": "Karhutla Gambut Kalimantan Barat (Ketapang & Kubu Raya)",
+  "province": "Kalimantan Barat",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -1.1655,
+    "longitude": 110.6474,
+    "center_lat": -1.1655,
+    "center_lon": 110.6474
+  },
+  "bbox": [
+    110.055,
+    -2.999,
+    111.636,
+    -0.407
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "total_hotspots": 28,
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "weather": "open_meteo_ensemble_or_live"
+  }
+}

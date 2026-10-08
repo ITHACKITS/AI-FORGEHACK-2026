@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_bukit_tigapuluh",
+  "hazard": "fire",
+  "name": "TN Bukit Tiga Puluh (Indragiri Hulu, Riau)",
+  "province": "Riau",
+  "region": "Sumatera",
+  "forest_type": "Hutan Perbukitan Tropis",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -0.85,
+    "longitude": 102.45,
+    "center_lat": -0.85,
+    "center_lon": 102.45
+  },
+  "bbox": [
+    101.75,
+    -1.55,
+    103.15,
+    -0.15
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 13,
+  "description": "Zona hutan perbukitan di perbatasan Riau dan Jambi yang rawan kebakaran perbatasan di musim kering.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

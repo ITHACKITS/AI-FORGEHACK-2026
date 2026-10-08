@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_gunung_lawu",
+  "hazard": "fire",
+  "name": "Hutan Lindung Gunung Lawu (Karanganyar, Jateng)",
+  "province": "Jawa Tengah",
+  "region": "Jawa",
+  "forest_type": "Hutan Lereng Kering & Pinus",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -7.63,
+    "longitude": 111.19,
+    "center_lat": -7.63,
+    "center_lon": 111.19
+  },
+  "bbox": [
+    110.49,
+    -8.33,
+    111.89,
+    -6.93
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 12,
+  "description": "Lereng curam berbatu dengan serasah daun pinus kering yang mudah memicu kebakaran merambat cepat.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

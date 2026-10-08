@@ -1,0 +1,96 @@
+{
+  "type": "FeatureCollection",
+  "name": "anak_krakatau_reported_impact",
+  "metadata": {
+    "event_id": "anak_krakatau_2026_09",
+    "resolution": "district",
+    "source_url": "https://en.antaranews.com/news/430292/indonesia-ramps-up-response-as-multiple-volcanoes-erupt",
+    "reported_at_utc": "2026-09-07T08:00:00Z",
+    "caveat": "Data dampak laporan awal dari BNPB dan media resmi pada skala kabupaten. Penutupan bandara adalah dampak ruang udara/penerbangan, bukan bukti akumulasi jatuhan abu di darat."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kabupaten Lampung Selatan",
+        "category": "district_severely_impacted",
+        "impact_type": "ashfall_reported",
+        "source": "BNPB via ANTARA News",
+        "reported_at_utc": "2026-09-07T08:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [105.15, -5.95],
+            [105.85, -5.95],
+            [105.85, -5.45],
+            [105.15, -5.45],
+            [105.15, -5.95]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kabupaten Tanggamus",
+        "category": "district_severely_impacted",
+        "impact_type": "ashfall_reported",
+        "source": "BNPB via ANTARA News",
+        "reported_at_utc": "2026-09-07T08:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [104.35, -5.85],
+            [105.15, -5.85],
+            [105.15, -5.25],
+            [104.35, -5.25],
+            [104.35, -5.85]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kabupaten Pandeglang",
+        "category": "district_severely_impacted",
+        "impact_type": "ashfall_reported",
+        "source": "BNPB via ANTARA News",
+        "reported_at_utc": "2026-09-07T08:00:00Z"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [105.20, -7.00],
+            [106.05, -7.00],
+            [106.05, -6.35],
+            [105.20, -6.35],
+            [105.20, -7.00]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bandara Radin Inten II (TKG)",
+        "category": "aviation_impact",
+        "impact_type": "flight_advisory_or_closure",
+        "source_reports": [
+          { "source": "Kompas", "reported_status": "penerbangan dialihkan", "timestamp_utc": "2026-09-06T06:00:00Z" },
+          { "source": "ANTARA", "reported_status": "ditutup sementara", "timestamp_utc": "2026-09-07T04:00:00Z" }
+        ],
+        "is_airport": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.178, -5.242]
+      }
+    }
+  ]
+}

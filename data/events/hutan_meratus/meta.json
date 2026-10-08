@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_meratus",
+  "hazard": "fire",
+  "name": "Hutan Lindung Pegunungan Meratus (Hulu Sungai, Kalsel)",
+  "province": "Kalimantan Selatan",
+  "region": "Kalimantan",
+  "forest_type": "Hutan Lindung Pegunungan",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -2.75,
+    "longitude": 115.55,
+    "center_lat": -2.75,
+    "center_lon": 115.55
+  },
+  "bbox": [
+    114.85,
+    -3.45,
+    116.25,
+    -2.05
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 54,
+  "description": "Kawasan tangkapan air Kalsel dengan kerentanan kebakaran di punggungan lereng kering.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

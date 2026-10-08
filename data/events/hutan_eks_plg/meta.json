@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_eks_plg",
+  "hazard": "fire",
+  "name": "KHG Eks-PLG Sejuta Hektar (Pulang Pisau, Kalteng)",
+  "province": "Kalimantan Tengah",
+  "region": "Kalimantan",
+  "forest_type": "Kawasan Hidrologis Gambut Kritis",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -2.85,
+    "longitude": 114.25,
+    "center_lat": -2.85,
+    "center_lon": 114.25
+  },
+  "bbox": [
+    113.55,
+    -3.55,
+    114.95,
+    -2.15
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 15,
+  "description": "Zona bekas proyek lahan gambut dengan kanal-kanal terbuka yang memicu pengeringan gambut dan api bawah tanah.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

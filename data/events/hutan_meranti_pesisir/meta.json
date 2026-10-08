@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_meranti_pesisir",
+  "hazard": "fire",
+  "name": "KHG Pulau Tebing Tinggi (Kep. Meranti, Riau)",
+  "province": "Riau",
+  "region": "Sumatera",
+  "forest_type": "Rawa Gambut Pesisir Pulau Kecil",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": 0.95,
+    "longitude": 102.72,
+    "center_lat": 0.95,
+    "center_lon": 102.72
+  },
+  "bbox": [
+    102.02,
+    0.25,
+    103.42,
+    1.65
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 0,
+  "description": "Lahan gambut pesisir berhadapan langsung dengan jalur pelayaran internasional Selat Malaka.",
+  "data_status": {
+    "hotspots": "zero_active_hotspots_in_radius",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

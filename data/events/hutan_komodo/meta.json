@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_komodo",
+  "hazard": "fire",
+  "name": "Sabana Padar & Loh Liang - TN Komodo (NTT)",
+  "province": "Nusa Tenggara Timur",
+  "region": "Bali & Nusa Tenggara",
+  "forest_type": "Sabana Kepulauan Kering",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -8.55,
+    "longitude": 119.55,
+    "center_lat": -8.55,
+    "center_lon": 119.55
+  },
+  "bbox": [
+    118.85,
+    -9.25,
+    120.25,
+    -7.85
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 8,
+  "description": "Sabana padang rumput kepulauan habitat komodo dengan curah hujan tahunan sangat rendah.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

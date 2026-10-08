@@ -1,0 +1,22 @@
+{
+  "event_id": "custom_volcano_7e5df29a",
+  "hazard": "volcano",
+  "name": "Titik Bebas Klik Lereng Merapi",
+  "start_utc": "2026-10-06T14:23:19.815423+00:00",
+  "duration_h": 24.0,
+  "column_height_km": 6.0,
+  "vent_elevation_m": 800.0,
+  "coordinates": {
+    "latitude": -7.54,
+    "longitude": 110.44
+  },
+  "bbox": [
+    109.74,
+    -8.24,
+    111.14,
+    -6.84
+  ],
+  "source": "Koordinat Kustom Pengguna (Interaktif)",
+  "members_source": "open_meteo_live_forecast_api",
+  "n_members": 5
+}

@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_kerinci_seblat",
+  "hazard": "fire",
+  "name": "TN Kerinci Seblat (Jambi & Sumbar)",
+  "province": "Jambi",
+  "region": "Sumatera",
+  "forest_type": "Hutan Pegunungan Tropis",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -2.15,
+    "longitude": 101.45,
+    "center_lat": -2.15,
+    "center_lon": 101.45
+  },
+  "bbox": [
+    100.75,
+    -2.85,
+    102.15,
+    -1.45
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 1,
+  "description": "Taman nasional terluas di Sumatera dengan risiko kebakaran pada zona perladangan lereng curam.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

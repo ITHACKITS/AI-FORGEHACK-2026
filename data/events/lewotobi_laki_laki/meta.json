@@ -1,0 +1,24 @@
+{
+  "event_id": "lewotobi_laki_laki",
+  "hazard": "volcano",
+  "name": "Erupsi Gunung Lewotobi Laki-laki (Flores Timur, NTT)",
+  "start_utc": "2026-09-07T15:35:00Z",
+  "end_utc": "2026-09-08T22:00:00Z",
+  "duration_h": 30.0,
+  "alert_level_at_event": "IV (Awas)",
+  "restricted_radius_km": 7.0,
+  "eruption_style": "eksplosif magmatik kuat, lontaran piroklastik, dan hujan abu lebat",
+  "column_height_km": 8.0,
+  "plume_top_asl_km": 9.6,
+  "vent_elevation_m": 1584.0,
+  "peak_phase_duration_h": 6.0,
+  "coordinates": {
+    "latitude": -8.538,
+    "longitude": 122.768
+  },
+  "bbox": [122.0, -9.2, 123.5, -7.9],
+  "source": "Pos Pengamatan G. Lewotobi Laki-laki PVMBG",
+  "members_source": "open_meteo_ensemble",
+  "n_members": 51,
+  "disclaimer": "Simulasi ini adalah estimasi ilmiah untuk kesiapsiagaan dan pembelajaran, BUKAN peringatan resmi. Ikuti instruksi resmi dari PVMBG, BMKG, dan BPBD."
+}

@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_giam_siak",
+  "hazard": "fire",
+  "name": "SM Giam Siak Kecil (Bengkalis & Siak, Riau)",
+  "province": "Riau",
+  "region": "Sumatera",
+  "forest_type": "Cagar Biosfer Rawa Gambut",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": 1.18,
+    "longitude": 101.88,
+    "center_lat": 1.18,
+    "center_lon": 101.88
+  },
+  "bbox": [
+    101.18,
+    0.48,
+    102.58,
+    1.88
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 0,
+  "description": "Hamparan kubah gambut dalam penghasil asap lintas batas ke arah Selat Malaka.",
+  "data_status": {
+    "hotspots": "zero_active_hotspots_in_radius",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

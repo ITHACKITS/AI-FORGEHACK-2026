@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_tambora",
+  "hazard": "fire",
+  "name": "Sabana Kaldera TN Gunung Tambora (Bima, NTB)",
+  "province": "Nusa Tenggara Barat",
+  "region": "Bali & Nusa Tenggara",
+  "forest_type": "Sabana Lereng Gunung & Kaldera",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -8.25,
+    "longitude": 118.0,
+    "center_lat": -8.25,
+    "center_lon": 118.0
+  },
+  "bbox": [
+    117.3,
+    -8.95,
+    118.7,
+    -7.55
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 2,
+  "description": "Padang rumput Doro Ncanga di kaki Tambora tempat penggembalaan ternak dengan sabana mudah terbakar.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

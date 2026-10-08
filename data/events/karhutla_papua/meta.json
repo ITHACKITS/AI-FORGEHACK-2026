@@ -1,0 +1,27 @@
+{
+  "event_id": "karhutla_papua",
+  "hazard": "fire",
+  "name": "Karhutla Savana Papua Selatan (Merauke)",
+  "province": "Papua Selatan",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -8.3074,
+    "longitude": 140.7115,
+    "center_lat": -8.3074,
+    "center_lon": 140.7115
+  },
+  "bbox": [
+    140.223,
+    -9.188,
+    141.196,
+    -7.634
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "total_hotspots": 100,
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "weather": "open_meteo_ensemble_or_live"
+  }
+}

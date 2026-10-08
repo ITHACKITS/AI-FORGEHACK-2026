@@ -1,0 +1,44 @@
+{
+  "event_id": "anak_krakatau_2026_09",
+  "hazard": "volcano",
+  "name": "Erupsi Gunung Anak Krakatau September 2026",
+  "start_utc": "2026-09-04T16:07:00Z",
+  "end_utc": "2026-09-05T17:04:00Z",
+  "duration_h": 25.0,
+  "alert_level_at_event": "III (Siaga)",
+  "alert_level_later": "II (Waspada) sejak 2026-09-21T11:30Z",
+  "restricted_radius_km": 3.0,
+  "eruption_style": "strombolian dengan fase erupsi menerus dan lava fountain",
+  "column_height_km": null,
+  "plume_top_asl_km": 15.2,
+  "vent_elevation_m": 110.0,
+  "peak_phase_duration_h": 6.0,
+  "vertical_distribution": {
+    "upper_layer_asl_km": 15.2,
+    "upper_layer_direction": "barat_daya",
+    "mid_layer_asl_km": 6.1,
+    "mid_layer_direction": "barat",
+    "lower_layer_direction": "timur"
+  },
+  "coordinates": {
+    "latitude": -6.102,
+    "longitude": 105.423
+  },
+  "bbox": [104.5, -6.8, 106.5, -5.5],
+  "source": "Badan Geologi, PVMBG, VAAC Darwin, Kompas",
+  "members_source": "synthetic_from_mean_spread",
+  "n_members": 51,
+  "data_status": {
+    "weather": "synthetic_from_mean_spread",
+    "vona": "sourced_manual",
+    "reported_impact": "sourced_district_level",
+    "column_height": "null_from_vona",
+    "plume_top": "sourced_secondary_satellite"
+  },
+  "source_urls": [
+    "https://geologi.esdm.go.id/media-center/perkembangan-erupsi-gunungapi-anak-krakatau-tanggal-7-september-2026",
+    "https://nasional.kompas.com/read/2026/09/06/14183071/ketinggian-abu-vulkanik-erupsi-gunung-anak-krakatau-capai-50000-kaki",
+    "https://en.antaranews.com/news/430292/indonesia-ramps-up-response-as-multiple-volcanoes-erupt"
+  ],
+  "disclaimer": "Simulasi ini adalah estimasi ilmiah untuk kesiapsiagaan dan pembelajaran, BUKAN peringatan resmi. Ikuti instruksi resmi dari PVMBG, BMKG, dan BPBD."
+}

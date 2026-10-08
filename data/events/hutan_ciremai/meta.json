@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_ciremai",
+  "hazard": "fire",
+  "name": "TN Gunung Ciremai (Kuningan, Jabar)",
+  "province": "Jawa Barat",
+  "region": "Jawa",
+  "forest_type": "Hutan Musim Pegunungan",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -6.89,
+    "longitude": 108.4,
+    "center_lat": -6.89,
+    "center_lon": 108.4
+  },
+  "bbox": [
+    107.7,
+    -7.59,
+    109.1,
+    -6.19
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 7,
+  "description": "Kawasan lereng utara berbatu di daerah Cirebon-Kuningan yang kering akibat bayangan hujan.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

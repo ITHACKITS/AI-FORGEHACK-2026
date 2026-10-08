@@ -1,0 +1,20 @@
+﻿# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# IDE & Caches
+.cursor/
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1636 @@
+{
+  "type": "FeatureCollection",
+  "name": "volcanoes_indonesia_pvmbg_national",
+  "metadata": {
+    "source": "Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) - Badan Geologi Kementerian ESDM RI",
+    "updated_at": "2026-10-06T08:30:00Z",
+    "total_volcanoes": 70,
+    "coverage": "Seluruh Wilayah Republik Indonesia (Sumatera, Jawa, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Sulawesi, Maluku)",
+    "description": "Katalog lengkap 70 gunung api aktif tipe A Indonesia yang dipantau pos pengamatan PVMBG secara aktif 24/7."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lewotobi_laki_laki",
+        "name": "G. Lewotobi Laki-laki",
+        "province": "Flores Timur, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1584,
+        "level": 4,
+        "level_name": "Level IV (Awas)",
+        "color": "#ef4444",
+        "radius_bahaya_km": 7.0,
+        "last_vona": "Erupsi paroksimal kolom abu 8.000m",
+        "has_event": true,
+        "event_id": "lewotobi_laki_laki"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.768,
+          -8.538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "anak_krakatau_2026_09",
+        "name": "G. Anak Krakatau",
+        "province": "Selat Sunda / Lampung",
+        "region": "Sumatera",
+        "elevation_m": 157,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 5.0,
+        "last_vona": "Erupsi abu vulkanik tinggi 15.200m ASL",
+        "has_event": true,
+        "event_id": "anak_krakatau_2026_09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.423,
+          -6.102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "merapi_yogyakarta",
+        "name": "G. Merapi",
+        "province": "Sleman / Klaten / Boyolali / Magelang",
+        "region": "Jawa",
+        "elevation_m": 2968,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 7.0,
+        "last_vona": "Guguran lava dan awan panas Kali Krasak",
+        "has_event": true,
+        "event_id": "merapi_yogyakarta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.446,
+          -7.54
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marapi_sumatera",
+        "name": "G. Marapi",
+        "province": "Sumatera Barat",
+        "region": "Sumatera",
+        "elevation_m": 2891,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 4.5,
+        "last_vona": "Erupsi eksplosif kolom abu 2000m",
+        "has_event": true,
+        "event_id": "marapi_sumatera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.473,
+          -0.381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "semeru",
+        "name": "G. Semeru",
+        "province": "Lumajang / Malang, Jawa Timur",
+        "region": "Jawa",
+        "elevation_m": 3676,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 5.0,
+        "last_vona": "Aktivitas APG menerus Besuk Kobokan",
+        "has_event": true,
+        "event_id": "semeru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.922,
+          -8.108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ibu",
+        "name": "G. Ibu",
+        "province": "Halmahera Barat, Maluku Utara",
+        "region": "Maluku & Papua",
+        "elevation_m": 1325,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 5.0,
+        "last_vona": "Erupsi abu vertikal 4.000m",
+        "has_event": true,
+        "event_id": "ibu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.63,
+          1.488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ruang",
+        "name": "G. Ruang",
+        "province": "Kep. Sitaro, Sulawesi Utara",
+        "region": "Sulawesi",
+        "elevation_m": 725,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 4.0,
+        "last_vona": "Erupsi eksplosif paroksimal",
+        "has_event": true,
+        "event_id": "ruang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.37,
+          2.303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "karangetang",
+        "name": "G. Karangetang",
+        "province": "Kep. Sitaro, Sulawesi Utara",
+        "region": "Sulawesi",
+        "elevation_m": 1784,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 3.5,
+        "last_vona": "Leleran lava pijar aktif Kawah Utama",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.405,
+          2.781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "awu",
+        "name": "G. Awu",
+        "province": "Kep. Sangihe, Sulawesi Utara",
+        "region": "Sulawesi",
+        "elevation_m": 1320,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 5.0,
+        "last_vona": "Peningkatan gempa vulkanik dangkal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.45,
+          3.67
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "iya",
+        "name": "G. Iya",
+        "province": "Ende, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 637,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 3.0,
+        "last_vona": "Peningkatan kegempaan vulkanik dalam",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.645,
+          -8.897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lewotolo",
+        "name": "G. Lewotolo",
+        "province": "Lembata, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1423,
+        "level": 3,
+        "level_name": "Level III (Siaga)",
+        "color": "#f97316",
+        "radius_bahaya_km": 3.0,
+        "last_vona": "Letusan eksplosif strombolian menerus",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.505,
+          -8.272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sinabung",
+        "name": "G. Sinabung",
+        "province": "Karo, Sumatera Utara",
+        "region": "Sumatera",
+        "elevation_m": 2460,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 3.0,
+        "last_vona": "Emisi asap kawah putih sedang",
+        "has_event": true,
+        "event_id": "sinabung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.392,
+          3.17
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kerinci",
+        "name": "G. Kerinci",
+        "province": "Jambi / Sumatera Barat",
+        "region": "Sumatera",
+        "elevation_m": 3805,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 3.0,
+        "last_vona": "Emisi gas sulfatara kelabu 600m",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.264,
+          -1.697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dempo",
+        "name": "G. Dempo",
+        "province": "Pagar Alam, Sumatera Selatan",
+        "region": "Sumatera",
+        "elevation_m": 3173,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 2.5,
+        "last_vona": "Erupsi freatik kawah merapi",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.13,
+          -4.03
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "slamet",
+        "name": "G. Slamet",
+        "province": "Banyumas / Brebes, Jawa Tengah",
+        "region": "Jawa",
+        "elevation_m": 3432,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 2.0,
+        "last_vona": "Peningkatan kegempaan tremor hembusan",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.208,
+          -7.242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dieng",
+        "name": "G. Dieng",
+        "province": "Banjarnegara / Wonosobo, Jawa Tengah",
+        "region": "Jawa",
+        "elevation_m": 2565,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Waspada gas beracun CO2 Kawah Timbang",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.9,
+          -7.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bromo",
+        "name": "G. Bromo",
+        "province": "Probolinggo / Pasuruan, Jawa Timur",
+        "region": "Jawa",
+        "elevation_m": 2329,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas hembusan kawah aktif",
+        "has_event": true,
+        "event_id": "bromo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.95,
+          -7.942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "raung",
+        "name": "G. Raung",
+        "province": "Banyuwangi / Bondowoso, Jawa Timur",
+        "region": "Jawa",
+        "elevation_m": 3332,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 3.0,
+        "last_vona": "Gempa tremor hembusan menerus",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.042,
+          -8.125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sangeang_api",
+        "name": "G. Sangeang Api",
+        "province": "Bima, Nusa Tenggara Barat",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1949,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Emisi asap kawah Doro Api",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.07,
+          -8.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kelimutu",
+        "name": "G. Kelimutu",
+        "province": "Ende, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1639,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Perubahan warna dan suhu Danau Kawah",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.82,
+          -8.77
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lewotobi_perempuan",
+        "name": "G. Lewotobi Perempuan",
+        "province": "Flores Timur, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1702,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 2.0,
+        "last_vona": "Emisi asap kawah putih",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.787,
+          -8.553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "soputan",
+        "name": "G. Soputan",
+        "province": "Minahasa Tenggara, Sulawesi Utara",
+        "region": "Sulawesi",
+        "elevation_m": 1785,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 2.0,
+        "last_vona": "Emisi asap kawah putih tipis",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.737,
+          1.112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lokon",
+        "name": "G. Lokon",
+        "province": "Tomohon, Sulawesi Utara",
+        "region": "Sulawesi",
+        "elevation_m": 1580,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Peningkatan kegempaan vulkanik Tompaluan",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.793,
+          1.358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gamalama",
+        "name": "G. Gamalama",
+        "province": "Ternate, Maluku Utara",
+        "region": "Maluku & Papua",
+        "elevation_m": 1715,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Emisi asap kawah putih kelabu",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.33,
+          0.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dukono",
+        "name": "G. Dukono",
+        "province": "Halmahera Utara, Maluku Utara",
+        "region": "Maluku & Papua",
+        "elevation_m": 1229,
+        "level": 2,
+        "level_name": "Level II (Waspada)",
+        "color": "#eab308",
+        "radius_bahaya_km": 3.0,
+        "last_vona": "Letusan menerus abu vulkanik Malupang",
+        "has_event": true,
+        "event_id": "dukono"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.894,
+          1.693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "seulawah_agam",
+        "name": "G. Seulawah Agam",
+        "province": "Aceh",
+        "region": "Sumatera",
+        "elevation_m": 1810,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.658,
+          5.448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "peuet_sago",
+        "name": "G. Peuet Sago",
+        "province": "Pidie, Aceh",
+        "region": "Sumatera",
+        "elevation_m": 2801,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 2.0,
+        "last_vona": "Aktivitas fumarola tenang",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.329,
+          4.914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "burni_telong",
+        "name": "G. Burni Telong",
+        "province": "Bener Meriah, Aceh",
+        "region": "Sumatera",
+        "elevation_m": 2624,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.821,
+          4.773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sibayak",
+        "name": "G. Sibayak",
+        "province": "Karo, Sumatera Utara",
+        "region": "Sumatera",
+        "elevation_m": 2212,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas solfatara normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.52,
+          3.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sorikmarapi",
+        "name": "G. Sorikmarapi",
+        "province": "Mandailing Natal, Sumatera Utara",
+        "region": "Sumatera",
+        "elevation_m": 2145,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.622,
+          0.686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tandikat",
+        "name": "G. Tandikat",
+        "province": "Padang Pariaman, Sumatera Barat",
+        "region": "Sumatera",
+        "elevation_m": 2438,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.317,
+          -0.433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "talang",
+        "name": "G. Talang",
+        "province": "Solok, Sumatera Barat",
+        "region": "Sumatera",
+        "elevation_m": 2597,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Emisi asap kawah tipis",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.679,
+          -0.978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kaba",
+        "name": "G. Kaba",
+        "province": "Rejang Lebong, Bengkulu",
+        "region": "Sumatera",
+        "elevation_m": 1952,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.62,
+          -3.52
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "salak",
+        "name": "G. Salak",
+        "province": "Sukabumi / Bogor, Jawa Barat",
+        "region": "Jawa",
+        "elevation_m": 2211,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Kawah Ratu aktif normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.733,
+          -6.717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gede",
+        "name": "G. Gede",
+        "province": "Cianjur / Bogor, Jawa Barat",
+        "region": "Jawa",
+        "elevation_m": 2958,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.983,
+          -6.783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tangkuban_parahu",
+        "name": "G. Tangkuban Parahu",
+        "province": "Bandung Barat, Jawa Barat",
+        "region": "Jawa",
+        "elevation_m": 2084,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Kawah Ratu normal terbuka",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.6,
+          -6.77
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "guntur",
+        "name": "G. Guntur",
+        "province": "Garut, Jawa Barat",
+        "region": "Jawa",
+        "elevation_m": 2249,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.84,
+          -7.143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "papandayan",
+        "name": "G. Papandayan",
+        "province": "Garut, Jawa Barat",
+        "region": "Jawa",
+        "elevation_m": 2665,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Emisi asap solfatara normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.73,
+          -7.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "galunggung",
+        "name": "G. Galunggung",
+        "province": "Tasikmalaya, Jawa Barat",
+        "region": "Jawa",
+        "elevation_m": 2168,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Kawah danau tenang",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.058,
+          -7.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ciremai",
+        "name": "G. Ciremai",
+        "province": "Kuningan / Majalengka, Jawa Barat",
+        "region": "Jawa",
+        "elevation_m": 3078,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah puncak normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.4,
+          -6.892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sundoro",
+        "name": "G. Sindoro",
+        "province": "Temanggung / Wonosobo, Jawa Tengah",
+        "region": "Jawa",
+        "elevation_m": 3151,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas kawah puncak normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.992,
+          -7.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sumbing",
+        "name": "G. Sumbing",
+        "province": "Magelang / Temanggung, Jawa Tengah",
+        "region": "Jawa",
+        "elevation_m": 3371,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.07,
+          -7.384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kelud",
+        "name": "G. Kelud",
+        "province": "Kediri / Blitar, Jawa Timur",
+        "region": "Jawa",
+        "elevation_m": 1731,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Normal pasca erupsi besar 2014",
+        "has_event": true,
+        "event_id": "kelud"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.308,
+          -7.93
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "arjuno_welirang",
+        "name": "G. Arjuno-Welirang",
+        "province": "Malang / Pasuruan, Jawa Timur",
+        "region": "Jawa",
+        "elevation_m": 3339,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas solfatara normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.58,
+          -7.725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lamongan",
+        "name": "G. Lamongan",
+        "province": "Lumajang, Jawa Timur",
+        "region": "Jawa",
+        "elevation_m": 1651,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.342,
+          -7.979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ijen",
+        "name": "G. Ijen",
+        "province": "Banyuwangi / Bondowoso, Jawa Timur",
+        "region": "Jawa",
+        "elevation_m": 2386,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Danau kawah asam aktif normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.242,
+          -8.058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "batur",
+        "name": "G. Batur",
+        "province": "Bangli, Bali",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1717,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.375,
+          -8.242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agung",
+        "name": "G. Agung",
+        "province": "Karangasem, Bali",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 3142,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 2.0,
+        "last_vona": "Aktivitas vulkanik normal pasca 2017",
+        "has_event": true,
+        "event_id": "agung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.508,
+          -8.343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rinjani",
+        "name": "G. Rinjani",
+        "province": "Lombok Timur, Nusa Tenggara Barat",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 3726,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Segara Anak dan Barujari normal",
+        "has_event": true,
+        "event_id": "rinjani"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.458,
+          -8.42
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tambora",
+        "name": "G. Tambora",
+        "province": "Dompu / Bima, Nusa Tenggara Barat",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 2851,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 2.0,
+        "last_vona": "Kaldera raksasa aktif normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.0,
+          -8.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rokatenda",
+        "name": "G. Rokatenda (Paluweh)",
+        "province": "Sikka, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 875,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.708,
+          -8.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ebulobo",
+        "name": "G. Ebulobo",
+        "province": "Nagekeo, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 2124,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2,
+          -8.823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "inielika",
+        "name": "G. Inielika",
+        "province": "Ngada, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1559,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.98,
+          -8.73
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "egon",
+        "name": "G. Egon",
+        "province": "Sikka, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1703,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.45,
+          -8.67
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "iliboleng",
+        "name": "G. Iliboleng",
+        "province": "Adonara, Flores Timur, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1659,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.257,
+          -8.342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ile_werung",
+        "name": "G. Ile Werung",
+        "province": "Lembata, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 1018,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.57,
+          -8.53
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "batu_tara",
+        "name": "G. Batu Tara",
+        "province": "P. Komba, Lembata, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 748,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Letusan freatik laut normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.579,
+          -7.792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sirung",
+        "name": "G. Sirung",
+        "province": "P. Pantar, Alor, Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "elevation_m": 862,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.13,
+          -8.508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "colo",
+        "name": "G. Colo (Una-una)",
+        "province": "Teluk Tomini, Tojo Una-Una, Sulteng",
+        "region": "Sulawesi",
+        "elevation_m": 507,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.61,
+          -0.17
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ambang",
+        "name": "G. Ambang",
+        "province": "Bolaang Mongondow Timur, Sulut",
+        "region": "Sulawesi",
+        "elevation_m": 1795,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas solfatara normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.42,
+          0.75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mahawu",
+        "name": "G. Mahawu",
+        "province": "Tomohon, Sulawesi Utara",
+        "region": "Sulawesi",
+        "elevation_m": 1324,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Danau kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.86,
+          1.358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "klabat",
+        "name": "G. Klabat",
+        "province": "Minahasa Utara, Sulawesi Utara",
+        "region": "Sulawesi",
+        "elevation_m": 1995,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.03,
+          1.47
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tangkoko",
+        "name": "G. Tangkoko",
+        "province": "Bitung, Sulawesi Utara",
+        "region": "Sulawesi",
+        "elevation_m": 1149,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.2,
+          1.52
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tidore",
+        "name": "G. Tidore (Kie Matubu)",
+        "province": "Tidore, Maluku Utara",
+        "region": "Maluku & Papua",
+        "elevation_m": 1730,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.4,
+          0.66
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "gamkonora",
+        "name": "G. Gamkonora",
+        "province": "Halmahera Barat, Maluku Utara",
+        "region": "Maluku & Papua",
+        "elevation_m": 1635,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas kawah normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.53,
+          1.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kie_besi",
+        "name": "G. Kie Besi (Makian)",
+        "province": "Halmahera Selatan, Maluku Utara",
+        "region": "Maluku & Papua",
+        "elevation_m": 1357,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.4,
+          0.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "banda_api",
+        "name": "G. Banda Api",
+        "province": "Kep. Banda, Maluku Tengah",
+        "region": "Maluku & Papua",
+        "elevation_m": 640,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.0,
+        "last_vona": "Aktivitas solfatara normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.871,
+          -4.525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nila",
+        "name": "G. Nila",
+        "province": "Maluku Barat Daya",
+        "region": "Maluku & Papua",
+        "elevation_m": 781,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas pulau gunungapi normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.5,
+          -6.73
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "serua",
+        "name": "G. Serua",
+        "province": "Maluku Tengah",
+        "region": "Maluku & Papua",
+        "elevation_m": 641,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.0,
+          -6.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "teon",
+        "name": "G. Teon",
+        "province": "Maluku Barat Daya",
+        "region": "Maluku & Papua",
+        "elevation_m": 655,
+        "level": 1,
+        "level_name": "Level I (Normal)",
+        "color": "#22c55e",
+        "radius_bahaya_km": 1.5,
+        "last_vona": "Aktivitas normal",
+        "has_event": false
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.12,
+          -6.92
+        ]
+      }
+    }
+  ]
+}

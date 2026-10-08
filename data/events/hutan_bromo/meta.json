@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_bromo",
+  "hazard": "fire",
+  "name": "Sabana Bromo - TN Bromo Tengger Semeru (Jatim)",
+  "province": "Jawa Timur",
+  "region": "Jawa",
+  "forest_type": "Sabana Kaldera Dataran Tinggi",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -7.94,
+    "longitude": 112.95,
+    "center_lat": -7.94,
+    "center_lon": 112.95
+  },
+  "bbox": [
+    112.25,
+    -8.64,
+    113.65,
+    -7.24
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 6,
+  "description": "Lembah Teletubbies dan sabana kaldera Tengger yang sangat kering dan sering dilanda kebakaran savana.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

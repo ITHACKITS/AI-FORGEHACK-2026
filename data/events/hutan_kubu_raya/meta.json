@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_kubu_raya",
+  "hazard": "fire",
+  "name": "Lahan Gambut Rasau Jaya (Kubu Raya, Kalbar)",
+  "province": "Kalimantan Barat",
+  "region": "Kalimantan",
+  "forest_type": "Kawasan Gambut Pesisir",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -0.35,
+    "longitude": 109.45,
+    "center_lat": -0.35,
+    "center_lon": 109.45
+  },
+  "bbox": [
+    108.75,
+    -1.05,
+    110.15,
+    0.35
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 0,
+  "description": "Area gambut penyumbang asap utama ke Kota Pontianak dan Bandara Supadio.",
+  "data_status": {
+    "hotspots": "zero_active_hotspots_in_radius",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

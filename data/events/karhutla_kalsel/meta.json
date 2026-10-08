@@ -1,0 +1,27 @@
+{
+  "event_id": "karhutla_kalsel",
+  "hazard": "fire",
+  "name": "Karhutla Gambut Kalimantan Selatan (Banjarbaru & Tanah Laut)",
+  "province": "Kalimantan Selatan",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -2.9322,
+    "longitude": 115.0189,
+    "center_lat": -2.9322,
+    "center_lon": 115.0189
+  },
+  "bbox": [
+    114.144,
+    -4.254,
+    116.36,
+    -2.415
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "total_hotspots": 100,
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "weather": "open_meteo_ensemble_or_live"
+  }
+}

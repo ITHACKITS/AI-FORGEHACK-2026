@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_wasur",
+  "hazard": "fire",
+  "name": "Sabana Merauke - TN Wasur (Papua Selatan)",
+  "province": "Papua Selatan",
+  "region": "Maluku & Papua",
+  "forest_type": "Sabana Tropis & Lahan Basah Melaleuca",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -8.55,
+    "longitude": 140.65,
+    "center_lat": -8.55,
+    "center_lon": 140.65
+  },
+  "bbox": [
+    139.95,
+    -9.25,
+    141.35,
+    -7.85
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 60,
+  "description": "'Serengeti Papua', hamparan sabana kayu putih (Melaleuca) dengan kebakaran rutin musiman saat kemarau.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

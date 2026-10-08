@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_way_kambas",
+  "hazard": "fire",
+  "name": "TN Way Kambas (Lampung Timur, Lampung)",
+  "province": "Lampung",
+  "region": "Sumatera",
+  "forest_type": "Hutan Dataran Rendah & Rawa",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -4.95,
+    "longitude": 105.75,
+    "center_lat": -4.95,
+    "center_lon": 105.75
+  },
+  "bbox": [
+    105.05,
+    -5.65,
+    106.45,
+    -4.25
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 60,
+  "description": "Kawasan suaka gajah dan badak dengan padang alang-alang yang sangat mudah terbakar di musim panas.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

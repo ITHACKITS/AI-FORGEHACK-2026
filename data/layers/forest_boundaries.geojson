@@ -1,0 +1,3560 @@
+{
+  "type": "FeatureCollection",
+  "name": "Kawasan_Hutan_Konservasi_Nasional_Indonesia",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "hutan_sebangau",
+      "properties": {
+        "id": "hutan_sebangau",
+        "name": "TN Sebangau (Palangka Raya, Kalteng)",
+        "forest_type": "Hutan Rawa Gambut Tropis",
+        "province": "Kalimantan Tengah",
+        "region": "Kalimantan",
+        "area_ha": 568700.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 354,
+        "center_lat": -2.55,
+        "center_lon": 113.85,
+        "description": "Kawasan rawa gambut dalam terluas di Kalteng penyerap karbon global, episentrum kebakaran gambut musiman."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              113.35,
+              -2.1
+            ],
+            [
+              113.85,
+              -2.15
+            ],
+            [
+              114.15,
+              -2.35
+            ],
+            [
+              114.22,
+              -2.75
+            ],
+            [
+              114.18,
+              -3.18
+            ],
+            [
+              114.05,
+              -3.32
+            ],
+            [
+              113.68,
+              -3.28
+            ],
+            [
+              113.38,
+              -3.05
+            ],
+            [
+              113.28,
+              -2.65
+            ],
+            [
+              113.35,
+              -2.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_eks_plg",
+      "properties": {
+        "id": "hutan_eks_plg",
+        "name": "KHG Eks-PLG Sejuta Hektar (Pulang Pisau, Kalteng)",
+        "forest_type": "Kawasan Hidrologis Gambut Kritis",
+        "province": "Kalimantan Tengah",
+        "region": "Kalimantan",
+        "area_ha": 1000000.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 175,
+        "center_lat": -2.85,
+        "center_lon": 114.25,
+        "description": "Zona bekas proyek lahan gambut dengan kanal-kanal terbuka yang memicu pengeringan gambut dan api bawah tanah."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              114.87348313616526,
+              -2.8154253167163965
+            ],
+            [
+              114.88745409224757,
+              -2.850868596344668
+            ],
+            [
+              114.86861784199962,
+              -2.9042015286750997
+            ],
+            [
+              114.85,
+              -3.32
+            ],
+            [
+              114.48,
+              -3.45
+            ],
+            [
+              114.15,
+              -3.42
+            ],
+            [
+              114.0,
+              -3.15
+            ],
+            [
+              114.0,
+              -2.45
+            ],
+            [
+              114.5,
+              -2.4
+            ],
+            [
+              114.88,
+              -2.65
+            ],
+            [
+              114.87348313616526,
+              -2.8154253167163965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_tanjung_puting",
+      "properties": {
+        "id": "hutan_tanjung_puting",
+        "name": "TN Tanjung Puting (Kotawaringin Barat, Kalteng)",
+        "forest_type": "Hutan Rawa Gambut & Hutan Tropis",
+        "province": "Kalimantan Tengah",
+        "region": "Kalimantan",
+        "area_ha": 415040.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 379,
+        "center_lat": -3.05,
+        "center_lon": 111.95,
+        "description": "Cagar biosfer dunia habitat orangutan dengan kawasan gambut pesisir rawan rambatan api."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.48,
+              -3.45
+            ],
+            [
+              112.15,
+              -3.58
+            ],
+            [
+              111.9,
+              -3.58
+            ],
+            [
+              111.78,
+              -3.42
+            ],
+            [
+              111.82,
+              -2.85
+            ],
+            [
+              111.72,
+              -2.65
+            ],
+            [
+              111.95,
+              -2.62
+            ],
+            [
+              112.25,
+              -2.68
+            ],
+            [
+              112.4424160398291,
+              -2.847318295503561
+            ],
+            [
+              112.47042198817138,
+              -2.8462175344660343
+            ],
+            [
+              112.49522093850433,
+              -2.8598812398536446
+            ],
+            [
+              112.51056394023186,
+              -2.8971315784605354
+            ],
+            [
+              112.5030208944179,
+              -2.9243282051457147
+            ],
+            [
+              112.48,
+              -2.950501737613486
+            ],
+            [
+              112.48,
+              -3.45
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_gunung_palung",
+      "properties": {
+        "id": "hutan_gunung_palung",
+        "name": "TN Gunung Palung (Ketapang, Kalbar)",
+        "forest_type": "Hutan Rawa Gambut & Perbukitan",
+        "province": "Kalimantan Barat",
+        "region": "Kalimantan",
+        "area_ha": 90000.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 49,
+        "center_lat": -1.25,
+        "center_lon": 110.15,
+        "description": "Kawasan perbukitan dan rawa gambut di Ketapang yang rentan kebakaran di musim kemarau panjang."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              110.48077949428817,
+              -0.7
+            ],
+            [
+              110.51024481553372,
+              -0.6914128603583677
+            ],
+            [
+              110.53769197518216,
+              -0.7
+            ],
+            [
+              110.58,
+              -0.7
+            ],
+            [
+              110.58,
+              -1.48
+            ],
+            [
+              109.92,
+              -1.48
+            ],
+            [
+              109.92,
+              -0.7
+            ],
+            [
+              110.48077949428817,
+              -0.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_kubu_raya",
+      "properties": {
+        "id": "hutan_kubu_raya",
+        "name": "Lahan Gambut Rasau Jaya (Kubu Raya, Kalbar)",
+        "forest_type": "Kawasan Gambut Pesisir",
+        "province": "Kalimantan Barat",
+        "region": "Kalimantan",
+        "area_ha": 145000.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 26,
+        "center_lat": -0.35,
+        "center_lon": 109.45,
+        "description": "Area gambut penyumbang asap utama ke Kota Pontianak dan Bandara Supadio."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              109.61404,
+              -0.35
+            ],
+            [
+              109.64446,
+              -0.28639
+            ],
+            [
+              109.5974,
+              -0.24219
+            ],
+            [
+              109.54296,
+              -0.2212
+            ],
+            [
+              109.50977,
+              -0.16482
+            ],
+            [
+              109.45,
+              -0.12268
+            ],
+            [
+              109.39023,
+              -0.16482
+            ],
+            [
+              109.35704,
+              -0.2212
+            ],
+            [
+              109.3026,
+              -0.24219
+            ],
+            [
+              109.25554,
+              -0.28639
+            ],
+            [
+              109.28596,
+              -0.35
+            ],
+            [
+              109.33243,
+              -0.38846
+            ],
+            [
+              109.33197,
+              -0.43633
+            ],
+            [
+              109.35011,
+              -0.48841
+            ],
+            [
+              109.40838,
+              -0.47895
+            ],
+            [
+              109.45,
+              -0.45298
+            ],
+            [
+              109.49162,
+              -0.47895
+            ],
+            [
+              109.54989,
+              -0.48841
+            ],
+            [
+              109.56803,
+              -0.43633
+            ],
+            [
+              109.56757,
+              -0.38846
+            ],
+            [
+              109.61404,
+              -0.35
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_danau_sentarum",
+      "properties": {
+        "id": "hutan_danau_sentarum",
+        "name": "TN Danau Sentarum (Kapuas Hulu, Kalbar)",
+        "forest_type": "Lahan Basah & Hutan Rawa Musiman",
+        "province": "Kalimantan Barat",
+        "region": "Kalimantan",
+        "area_ha": 132000.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 8,
+        "center_lat": 0.85,
+        "center_lon": 112.15,
+        "description": "Lahan basah Ramsar yang mengering ekstrem saat fenomena El Nino."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              111.88261794461638,
+              0.5187937918230019
+            ],
+            [
+              111.55910981277657,
+              0.5436698351891934
+            ],
+            [
+              111.52673494708908,
+              0.5644473652514886
+            ],
+            [
+              111.51803335470242,
+              0.5971780663032096
+            ],
+            [
+              111.55416113762588,
+              1.0070867254948666
+            ],
+            [
+              111.56944507868143,
+              1.0311024579977133
+            ],
+            [
+              111.59063318364761,
+              1.0419941630354854
+            ],
+            [
+              112.01551318364761,
+              1.1433941630354854
+            ],
+            [
+              112.03990358567673,
+              1.1430981830155582
+            ],
+            [
+              112.0646814297091,
+              1.1277621059662668
+            ],
+            [
+              112.07709608126868,
+              1.096306383208253
+            ],
+            [
+              112.04408684315331,
+              0.9662632428943375
+            ],
+            [
+              112.0613,
+              0.9729
+            ],
+            [
+              112.09297,
+              1.02669
+            ],
+            [
+              112.15,
+              1.06689
+            ],
+            [
+              112.20703,
+              1.02669
+            ],
+            [
+              112.2387,
+              0.9729
+            ],
+            [
+              112.29065,
+              0.95287
+            ],
+            [
+              112.33555,
+              0.91069
+            ],
+            [
+              112.30653,
+              0.85
+            ],
+            [
+              112.26219,
+              0.81331
+            ],
+            [
+              112.26263,
+              0.76763
+            ],
+            [
+              112.24532,
+              0.71794
+            ],
+            [
+              112.18971,
+              0.72697
+            ],
+            [
+              112.15,
+              0.75175
+            ],
+            [
+              112.11029,
+              0.72697
+            ],
+            [
+              112.05468,
+              0.71794
+            ],
+            [
+              112.03737,
+              0.76763
+            ],
+            [
+              112.03781,
+              0.81331
+            ],
+            [
+              112.00906639539666,
+              0.8370944576656831
+            ],
+            [
+              111.93144632271225,
+              0.5516871680209575
+            ],
+            [
+              111.91420752135888,
+              0.5290072827889104
+            ],
+            [
+              111.88261794461638,
+              0.5187937918230019
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_meratus",
+      "properties": {
+        "id": "hutan_meratus",
+        "name": "Hutan Lindung Pegunungan Meratus (Hulu Sungai, Kalsel)",
+        "forest_type": "Hutan Lindung Pegunungan",
+        "province": "Kalimantan Selatan",
+        "region": "Kalimantan",
+        "area_ha": 180000.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 233,
+        "center_lat": -2.75,
+        "center_lon": 115.55,
+        "description": "Kawasan tangkapan air Kalsel dengan kerentanan kebakaran di punggungan lereng kering."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.05,
+              -2.4
+            ],
+            [
+              116.05,
+              -3.3
+            ],
+            [
+              114.85,
+              -3.3
+            ],
+            [
+              114.85,
+              -2.35
+            ],
+            [
+              116.05,
+              -2.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_banjarbaru",
+      "properties": {
+        "id": "hutan_banjarbaru",
+        "name": "Lahan Gambut Landasan Ulin (Banjarbaru, Kalsel)",
+        "forest_type": "Rawa Gambut Pesisir Kering",
+        "province": "Kalimantan Selatan",
+        "region": "Kalimantan",
+        "area_ha": 45000.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 160,
+        "center_lat": -3.48,
+        "center_lon": 114.78,
+        "description": "Lokasi langganan kabut asap tebal yang mengganggu operasional penerbangan Bandara Syamsudin Noor."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.38,
+              -4.1
+            ],
+            [
+              114.3,
+              -4.1
+            ],
+            [
+              114.3,
+              -3.2469340374397824
+            ],
+            [
+              114.29385005143395,
+              -3.2228382825499944
+            ],
+            [
+              114.3,
+              -3.1989019026070658
+            ],
+            [
+              114.3,
+              -2.8
+            ],
+            [
+              114.8082494828147,
+              -2.8094120274595316
+            ],
+            [
+              114.8381130244428,
+              -2.8001042645910963
+            ],
+            [
+              114.86947337695813,
+              -2.810545803277002
+            ],
+            [
+              115.38,
+              -2.82
+            ],
+            [
+              115.38,
+              -3.210909890189361
+            ],
+            [
+              115.38613349358398,
+              -3.2340834026606475
+            ],
+            [
+              115.38,
+              -3.26226552963881
+            ],
+            [
+              115.38,
+              -4.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_kutai",
+      "properties": {
+        "id": "hutan_kutai",
+        "name": "TN Kutai (Kutai Timur & Bontang, Kaltim)",
+        "forest_type": "Hutan Hujan Dataran Rendah",
+        "province": "Kalimantan Timur",
+        "region": "Kalimantan",
+        "area_ha": 198629.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 51,
+        "center_lat": 0.25,
+        "center_lon": 117.25,
+        "description": "Sisa hutan ulin dataran rendah timur Kalimantan dengan sejarah kebakaran hebat tahun 1982 dan 1998."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.62,
+              -0.08
+            ],
+            [
+              116.62,
+              0.68
+            ],
+            [
+              117.06000695355056,
+              0.68
+            ],
+            [
+              117.10255977043926,
+              0.6965924440275735
+            ],
+            [
+              117.14329137255862,
+              0.68
+            ],
+            [
+              117.58,
+              0.68
+            ],
+            [
+              117.58,
+              -0.05
+            ],
+            [
+              116.87794312134503,
+              -0.07193927745796783
+            ],
+            [
+              116.84689747056647,
+              -0.08281872213161164
+            ],
+            [
+              116.79797053912975,
+              -0.07443842065219554
+            ],
+            [
+              116.62,
+              -0.08
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_sungai_wain",
+      "properties": {
+        "id": "hutan_sungai_wain",
+        "name": "Hutan Lindung Sungai Wain & IKN (Balikpapan, Kaltim)",
+        "forest_type": "Hutan Lindung Penyangga Ibu Kota",
+        "province": "Kalimantan Timur",
+        "region": "Kalimantan",
+        "area_ha": 10025.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 12,
+        "center_lat": -1.12,
+        "center_lon": 116.85,
+        "description": "Sabuk hijau sumber air Balikpapan dan kawasan penyangga ekologis IKN Nusantara."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              116.72,
+              -1.02
+            ],
+            [
+              116.95,
+              -1.04
+            ],
+            [
+              116.96,
+              -1.18
+            ],
+            [
+              116.89,
+              -1.24
+            ],
+            [
+              116.78,
+              -1.23
+            ],
+            [
+              116.71,
+              -1.12
+            ],
+            [
+              116.72,
+              -1.02
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_tesso_nilo",
+      "properties": {
+        "id": "hutan_tesso_nilo",
+        "name": "TN Tesso Nilo (Pelalawan, Riau)",
+        "forest_type": "Hutan Dataran Rendah & Gambut",
+        "province": "Riau",
+        "region": "Sumatera",
+        "area_ha": 81700.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 0,
+        "center_lat": -0.08,
+        "center_lon": 101.62,
+        "description": "Kawasan konservasi gajah sumatera yang kerap dilanda pembukaan lahan dan kebakaran gambut."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              101.35,
+              0.05
+            ],
+            [
+              101.95,
+              0.08
+            ],
+            [
+              101.98,
+              -0.28
+            ],
+            [
+              101.75,
+              -0.32
+            ],
+            [
+              101.38,
+              -0.25
+            ],
+            [
+              101.35,
+              0.05
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_giam_siak",
+      "properties": {
+        "id": "hutan_giam_siak",
+        "name": "SM Giam Siak Kecil (Bengkalis & Siak, Riau)",
+        "forest_type": "Cagar Biosfer Rawa Gambut",
+        "province": "Riau",
+        "region": "Sumatera",
+        "area_ha": 178722.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 28,
+        "center_lat": 1.18,
+        "center_lon": 101.88,
+        "description": "Hamparan kubah gambut dalam penghasil asap lintas batas ke arah Selat Malaka."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              101.62,
+              1.42
+            ],
+            [
+              102.12,
+              1.45
+            ],
+            [
+              102.2,
+              1.12
+            ],
+            [
+              102.05,
+              0.95
+            ],
+            [
+              101.7,
+              0.98
+            ],
+            [
+              101.62,
+              1.42
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_berbak",
+      "properties": {
+        "id": "hutan_berbak",
+        "name": "TN Berbak (Tanjung Jabung Timur, Jambi)",
+        "forest_type": "Rawa Gambut Terluas Asia Tenggara",
+        "province": "Jambi",
+        "region": "Sumatera",
+        "area_ha": 142750.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 143,
+        "center_lat": -1.42,
+        "center_lon": 104.28,
+        "description": "Kawasan situs Ramsar lahan basah gambut dengan endapan bahan bakar organik tebal."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.92286479574122,
+              -1.9288395789103487
+            ],
+            [
+              103.88653935398904,
+              -1.916895431235042
+            ],
+            [
+              103.85523335716394,
+              -1.8868509305596548
+            ],
+            [
+              103.82,
+              -1.88
+            ],
+            [
+              103.85,
+              -1.15
+            ],
+            [
+              104.55,
+              -1.18
+            ],
+            [
+              104.58,
+              -1.92
+            ],
+            [
+              104.18,
+              -1.95
+            ],
+            [
+              104.01055654264108,
+              -1.9170526610690999
+            ],
+            [
+              103.92286479574122,
+              -1.9288395789103487
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_padang_sugihan",
+      "properties": {
+        "id": "hutan_padang_sugihan",
+        "name": "SM Padang Sugihan (OKI, Sumsel)",
+        "forest_type": "Suaka Rawa Gambut Dalam",
+        "province": "Sumatera Selatan",
+        "region": "Sumatera",
+        "area_ha": 88000.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 60,
+        "center_lat": -3.22,
+        "center_lon": 105.12,
+        "description": "Episentrum karhutla gambut Sumatera Selatan yang berdampak langsung pada indeks ISPU Kota Palembang."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.22925653416439,
+              -3.9032189942854805
+            ],
+            [
+              105.16160801852077,
+              -3.88
+            ],
+            [
+              104.58,
+              -3.88
+            ],
+            [
+              104.55,
+              -2.95
+            ],
+            [
+              105.75,
+              -2.98
+            ],
+            [
+              105.78,
+              -3.88
+            ],
+            [
+              105.30948557489673,
+              -3.88
+            ],
+            [
+              105.22925653416439,
+              -3.9032189942854805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_meranti_pesisir",
+      "properties": {
+        "id": "hutan_meranti_pesisir",
+        "name": "KHG Pulau Tebing Tinggi (Kep. Meranti, Riau)",
+        "forest_type": "Rawa Gambut Pesisir Pulau Kecil",
+        "province": "Riau",
+        "region": "Sumatera",
+        "area_ha": 110000.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 20,
+        "center_lat": 0.95,
+        "center_lon": 102.72,
+        "description": "Lahan gambut pesisir berhadapan langsung dengan jalur pelayaran internasional Selat Malaka."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              102.8629,
+              0.95
+            ],
+            [
+              102.88939,
+              1.0054
+            ],
+            [
+              102.8484,
+              1.0439
+            ],
+            [
+              102.80097,
+              1.06219
+            ],
+            [
+              102.77206,
+              1.11129
+            ],
+            [
+              102.72,
+              1.148
+            ],
+            [
+              102.66794,
+              1.11129
+            ],
+            [
+              102.63903,
+              1.06219
+            ],
+            [
+              102.5916,
+              1.0439
+            ],
+            [
+              102.55061,
+              1.0054
+            ],
+            [
+              102.5771,
+              0.95
+            ],
+            [
+              102.61758,
+              0.9165
+            ],
+            [
+              102.61718,
+              0.87481
+            ],
+            [
+              102.63299,
+              0.82945
+            ],
+            [
+              102.68375,
+              0.83769
+            ],
+            [
+              102.72,
+              0.86031
+            ],
+            [
+              102.75625,
+              0.83769
+            ],
+            [
+              102.80701,
+              0.82945
+            ],
+            [
+              102.82282,
+              0.87481
+            ],
+            [
+              102.82242,
+              0.9165
+            ],
+            [
+              102.8629,
+              0.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_bukit_tigapuluh",
+      "properties": {
+        "id": "hutan_bukit_tigapuluh",
+        "name": "TN Bukit Tiga Puluh (Indragiri Hulu, Riau)",
+        "forest_type": "Hutan Perbukitan Tropis",
+        "province": "Riau",
+        "region": "Sumatera",
+        "area_ha": 144223.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 13,
+        "center_lat": -0.85,
+        "center_lon": 102.45,
+        "description": "Zona hutan perbukitan di perbatasan Riau dan Jambi yang rawan kebakaran perbatasan di musim kering."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                102.57897327940044,
+                -1.4379316484150213
+              ],
+              [
+                102.55467975906666,
+                -1.44400839804629
+              ],
+              [
+                102.52621252536643,
+                -1.4348348565004212
+              ],
+              [
+                102.44967607065773,
+                -1.3377221854099772
+              ],
+              [
+                102.39572235698084,
+                -1.216672889935911
+              ],
+              [
+                102.39132719143988,
+                -1.1826781535607203
+              ],
+              [
+                102.39804251866792,
+                -1.1597398385497588
+              ],
+              [
+                102.42325145751663,
+                -1.1382134086159261
+              ],
+              [
+                102.75651145751662,
+                -1.0093834086159261
+              ],
+              [
+                102.79927671197916,
+                -1.0125677839407488
+              ],
+              [
+                102.82279006014397,
+                -1.0429077272716125
+              ],
+              [
+                102.8662137210559,
+                -1.2039206012796433
+              ],
+              [
+                102.86208626158358,
+                -1.237050402006416
+              ],
+              [
+                102.84551020493788,
+                -1.2561017676143222
+              ],
+              [
+                102.57897327940044,
+                -1.4379316484150213
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                102.56727,
+                -0.88836
+              ],
+              [
+                102.56773,
+                -0.9361
+              ],
+              [
+                102.54963,
+                -0.98804
+              ],
+              [
+                102.49151,
+                -0.9786
+              ],
+              [
+                102.45,
+                -0.9527
+              ],
+              [
+                102.40849,
+                -0.9786
+              ],
+              [
+                102.35037,
+                -0.98804
+              ],
+              [
+                102.33227,
+                -0.9361
+              ],
+              [
+                102.33273,
+                -0.88836
+              ],
+              [
+                102.28638,
+                -0.85
+              ],
+              [
+                102.25605,
+                -0.78656
+              ],
+              [
+                102.30298,
+                -0.74248
+              ],
+              [
+                102.35728,
+                -0.72154
+              ],
+              [
+                102.39039,
+                -0.66531
+              ],
+              [
+                102.45,
+                -0.62329
+              ],
+              [
+                102.50961,
+                -0.66531
+              ],
+              [
+                102.54272,
+                -0.72154
+              ],
+              [
+                102.59702,
+                -0.74248
+              ],
+              [
+                102.64395,
+                -0.78656
+              ],
+              [
+                102.61362,
+                -0.85
+              ],
+              [
+                102.56727,
+                -0.88836
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_kerinci_seblat",
+      "properties": {
+        "id": "hutan_kerinci_seblat",
+        "name": "TN Kerinci Seblat (Jambi & Sumbar)",
+        "forest_type": "Hutan Pegunungan Tropis",
+        "province": "Jambi",
+        "region": "Sumatera",
+        "area_ha": 1375350.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 1,
+        "center_lat": -2.15,
+        "center_lon": 101.45,
+        "description": "Taman nasional terluas di Sumatera dengan risiko kebakaran pada zona perladangan lereng curam."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              101.81235,
+              -2.26845
+            ],
+            [
+              101.81376,
+              -2.41588
+            ],
+            [
+              101.75785,
+              -2.57628
+            ],
+            [
+              101.57826,
+              -2.54713
+            ],
+            [
+              101.45,
+              -2.46714
+            ],
+            [
+              101.32174,
+              -2.54713
+            ],
+            [
+              101.14215,
+              -2.57628
+            ],
+            [
+              101.08624,
+              -2.41588
+            ],
+            [
+              101.08765,
+              -2.26845
+            ],
+            [
+              100.94443,
+              -2.15
+            ],
+            [
+              100.85069,
+              -1.9541
+            ],
+            [
+              100.99573,
+              -1.81796
+            ],
+            [
+              101.16352,
+              -1.75331
+            ],
+            [
+              101.2658,
+              -1.57967
+            ],
+            [
+              101.45,
+              -1.44989
+            ],
+            [
+              101.6342,
+              -1.57967
+            ],
+            [
+              101.73648,
+              -1.75331
+            ],
+            [
+              101.90427,
+              -1.81796
+            ],
+            [
+              102.04931,
+              -1.9541
+            ],
+            [
+              101.95557,
+              -2.15
+            ],
+            [
+              101.81235,
+              -2.26845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_way_kambas",
+      "properties": {
+        "id": "hutan_way_kambas",
+        "name": "TN Way Kambas (Lampung Timur, Lampung)",
+        "forest_type": "Hutan Dataran Rendah & Rawa",
+        "province": "Lampung",
+        "region": "Sumatera",
+        "area_ha": 125621.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 68,
+        "center_lat": -4.95,
+        "center_lon": 105.75,
+        "description": "Kawasan suaka gajah dan badak dengan padang alang-alang yang sangat mudah terbakar di musim panas."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              105.93167,
+              -4.89079
+            ],
+            [
+              105.90326,
+              -4.95
+            ],
+            [
+              105.85984,
+              -4.9858
+            ],
+            [
+              105.86027,
+              -5.03036
+            ],
+            [
+              105.84332,
+              -5.07883
+            ],
+            [
+              105.78888,
+              -5.07002
+            ],
+            [
+              105.7602497301691,
+              -5.052221810138557
+            ],
+            [
+              105.56741023863546,
+              -5.334738146968549
+            ],
+            [
+              105.53850112783921,
+              -5.3517767112952574
+            ],
+            [
+              105.50533053825858,
+              -5.346701147462697
+            ],
+            [
+              105.48090589845951,
+              -5.316458100070318
+            ],
+            [
+              105.25271589845951,
+              -4.555288100070318
+            ],
+            [
+              105.25675969583749,
+              -4.5169060364457865
+            ],
+            [
+              105.28693012018692,
+              -4.492837787654347
+            ],
+            [
+              105.60484378713923,
+              -4.4357416461800465
+            ],
+            [
+              105.65176408214889,
+              -4.439024593075157
+            ],
+            [
+              105.80414516538771,
+              -4.476074933098635
+            ],
+            [
+              105.82592036822035,
+              -4.500828484620483
+            ],
+            [
+              105.90748118059483,
+              -4.70268684780864
+            ],
+            [
+              105.90178863863456,
+              -4.83256199954956
+            ],
+            [
+              105.89411820081013,
+              -4.855647119684461
+            ],
+            [
+              105.93167,
+              -4.89079
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_bromo",
+      "properties": {
+        "id": "hutan_bromo",
+        "name": "Sabana Bromo - TN Bromo Tengger Semeru (Jatim)",
+        "forest_type": "Sabana Kaldera Dataran Tinggi",
+        "province": "Jawa Timur",
+        "region": "Jawa",
+        "area_ha": 50276.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 6,
+        "center_lat": -7.94,
+        "center_lon": 112.95,
+        "description": "Lembah Teletubbies dan sabana kaldera Tengger yang sangat kering dan sering dilanda kebakaran savana."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              113.42,
+              -7.45
+            ],
+            [
+              113.42,
+              -8.18
+            ],
+            [
+              113.37455226923369,
+              -8.182449525930886
+            ],
+            [
+              112.35,
+              -8.18
+            ],
+            [
+              112.35,
+              -7.45
+            ],
+            [
+              113.42,
+              -7.45
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_baluran",
+      "properties": {
+        "id": "hutan_baluran",
+        "name": "Sabana Bekol - TN Baluran (Situbondo, Jatim)",
+        "forest_type": "Padang Savana Alami & Hutan Musim",
+        "province": "Jawa Timur",
+        "region": "Jawa",
+        "area_ha": 25000.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 12,
+        "center_lat": -7.83,
+        "center_lon": 114.38,
+        "description": "'Africa van Java', ekosistem sabana tropis kering dengan siklus kebakaran alami dan pembakaran liar."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              114.20260483952465,
+              -8.037626934797501
+            ],
+            [
+              114.15,
+              -8.02
+            ],
+            [
+              114.13602914155308,
+              -7.828333929009064
+            ],
+            [
+              114.15,
+              -7.794695236525116
+            ],
+            [
+              114.15,
+              -7.75
+            ],
+            [
+              114.52,
+              -7.75
+            ],
+            [
+              114.52,
+              -8.02
+            ],
+            [
+              114.2396357727811,
+              -8.02
+            ],
+            [
+              114.20260483952465,
+              -8.037626934797501
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_gunung_lawu",
+      "properties": {
+        "id": "hutan_gunung_lawu",
+        "name": "Hutan Lindung Gunung Lawu (Karanganyar, Jateng)",
+        "forest_type": "Hutan Lereng Kering & Pinus",
+        "province": "Jawa Tengah",
+        "region": "Jawa",
+        "area_ha": 15000.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 13,
+        "center_lat": -7.63,
+        "center_lon": 111.19,
+        "description": "Lereng curam berbatu dengan serasah daun pinus kering yang mudah memicu kebakaran merambat cepat."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              111.40203834391113,
+              -8.04439668140548
+            ],
+            [
+              111.37764533612862,
+              -8.047178435720737
+            ],
+            [
+              111.35101356234172,
+              -8.034895022799619
+            ],
+            [
+              110.65562356234172,
+              -7.412815022799618
+            ],
+            [
+              110.63904466873561,
+              -7.378458557162331
+            ],
+            [
+              110.65152101914204,
+              -7.342409047806107
+            ],
+            [
+              110.68093065404949,
+              -7.326198914869
+            ],
+            [
+              111.39704065404949,
+              -7.209688914869
+            ],
+            [
+              111.41717731752834,
+              -7.210528013210466
+            ],
+            [
+              111.43922159831126,
+              -7.222520575952162
+            ],
+            [
+              111.8198609828362,
+              -7.758502914997476
+            ],
+            [
+              111.83473587105209,
+              -7.7984370868970245
+            ],
+            [
+              111.82516691883995,
+              -7.826053349236599
+            ],
+            [
+              111.80217783625692,
+              -7.845782612097419
+            ],
+            [
+              111.40203834391113,
+              -8.04439668140548
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_merbabu",
+      "properties": {
+        "id": "hutan_merbabu",
+        "name": "Sabana TN Gunung Merbabu (Boyolali, Jateng)",
+        "forest_type": "Sabana Alpin & Semak Gunung",
+        "province": "Jawa Tengah",
+        "region": "Jawa",
+        "area_ha": 5725.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 4,
+        "center_lat": -7.45,
+        "center_lon": 110.43,
+        "description": "Padang rumput puncak yang rentan terbakar saat angin kencang berkecepatan tinggi di musim kemarau."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                110.45356,
+                -7.45764
+              ],
+              [
+                110.45002,
+                -7.4775
+              ],
+              [
+                110.43,
+                -7.47046
+              ],
+              [
+                110.40998,
+                -7.4775
+              ],
+              [
+                110.40644,
+                -7.45764
+              ],
+              [
+                110.39103,
+                -7.43736
+              ],
+              [
+                110.43,
+                -7.40483
+              ],
+              [
+                110.46897,
+                -7.43736
+              ],
+              [
+                110.45356,
+                -7.45764
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                110.72785426767709,
+                -7.344129689023455
+              ],
+              [
+                110.73895999971398,
+                -7.375544652055937
+              ],
+              [
+                110.72786098814976,
+                -7.406961990082967
+              ],
+              [
+                110.69948624713277,
+                -7.424429424314324
+              ],
+              [
+                110.66643685371574,
+                -7.420189756736097
+              ],
+              [
+                110.11186229961466,
+                -7.069130348387674
+              ],
+              [
+                110.09383089744621,
+                -7.040647251574175
+              ],
+              [
+                110.09797742625118,
+                -7.007192437763354
+              ],
+              [
+                110.12241700959602,
+                -6.983973371585378
+              ],
+              [
+                110.28312041084736,
+                -6.9308723323235455
+              ],
+              [
+                110.3223144687333,
+                -6.9342764128932295
+              ],
+              [
+                110.72785426767709,
+                -7.344129689023455
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_ciremai",
+      "properties": {
+        "id": "hutan_ciremai",
+        "name": "TN Gunung Ciremai (Kuningan, Jabar)",
+        "forest_type": "Hutan Musim Pegunungan",
+        "province": "Jawa Barat",
+        "region": "Jawa",
+        "area_ha": 15500.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 7,
+        "center_lat": -6.89,
+        "center_lon": 108.4,
+        "description": "Kawasan lereng utara berbatu di daerah Cirebon-Kuningan yang kering akibat bayangan hujan."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108.6451173665354,
+              -7.077065942518656
+            ],
+            [
+              108.62835091223971,
+              -7.09518662971716
+            ],
+            [
+              108.60495804189522,
+              -7.103076300891662
+            ],
+            [
+              108.506702563232,
+              -7.1007016152214275
+            ],
+            [
+              108.48721500517729,
+              -7.093900209660868
+            ],
+            [
+              107.83964218428939,
+              -6.604042631205467
+            ],
+            [
+              107.824015693849,
+              -6.5734978622926965
+            ],
+            [
+              107.83175570340893,
+              -6.540072387525232
+            ],
+            [
+              107.86407225178938,
+              -6.5183039549863855
+            ],
+            [
+              108.10596927482733,
+              -6.498102952619129
+            ],
+            [
+              108.42488143890918,
+              -6.645003716566197
+            ],
+            [
+              108.68374607837154,
+              -6.934865171788589
+            ],
+            [
+              108.68822604929723,
+              -6.974320339777231
+            ],
+            [
+              108.6451173665354,
+              -7.077065942518656
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_alas_purwo",
+      "properties": {
+        "id": "hutan_alas_purwo",
+        "name": "TN Alas Purwo (Banyuwangi, Jatim)",
+        "forest_type": "Hutan Musim Dataran Rendah",
+        "province": "Jawa Timur",
+        "region": "Jawa",
+        "area_ha": 43420.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 2,
+        "center_lat": -8.65,
+        "center_lon": 114.45,
+        "description": "Semenanjung Blambangan dengan padang penggembalaan Sadengan yang kering di musim timur."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                114.51508,
+                -8.67105
+              ],
+              [
+                114.50529,
+                -8.72574
+              ],
+              [
+                114.47304,
+                -8.72056
+              ],
+              [
+                114.45,
+                -8.70635
+              ],
+              [
+                114.42696,
+                -8.72056
+              ],
+              [
+                114.39471,
+                -8.72574
+              ],
+              [
+                114.38492,
+                -8.67105
+              ],
+              [
+                114.3592,
+                -8.65
+              ],
+              [
+                114.34237,
+                -8.61519
+              ],
+              [
+                114.36841,
+                -8.591
+              ],
+              [
+                114.39855,
+                -8.57952
+              ],
+              [
+                114.41692,
+                -8.54866
+              ],
+              [
+                114.45,
+                -8.52561
+              ],
+              [
+                114.48308,
+                -8.54866
+              ],
+              [
+                114.50145,
+                -8.57952
+              ],
+              [
+                114.53159,
+                -8.591
+              ],
+              [
+                114.55763,
+                -8.61519
+              ],
+              [
+                114.5408,
+                -8.65
+              ],
+              [
+                114.51508,
+                -8.67105
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                114.28014108360033,
+                -8.615681028419774
+              ],
+              [
+                114.2584935970498,
+                -8.656180627201763
+              ],
+              [
+                114.21454897158021,
+                -8.669511083600332
+              ],
+              [
+                114.17404937279822,
+                -8.647863597049819
+              ],
+              [
+                114.16071891639966,
+                -8.603918971580226
+              ],
+              [
+                114.18236640295018,
+                -8.563419372798236
+              ],
+              [
+                114.22631102841977,
+                -8.550088916399668
+              ],
+              [
+                114.26681062720176,
+                -8.571736402950181
+              ],
+              [
+                114.28014108360033,
+                -8.615681028419774
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_komodo",
+      "properties": {
+        "id": "hutan_komodo",
+        "name": "Sabana Padar & Loh Liang - TN Komodo (NTT)",
+        "forest_type": "Sabana Kepulauan Kering",
+        "province": "Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "area_ha": 173300.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 8,
+        "center_lat": -8.55,
+        "center_lon": 119.55,
+        "description": "Sabana padang rumput kepulauan habitat komodo dengan curah hujan tahunan sangat rendah."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              118.94339026779629,
+              -8.42
+            ],
+            [
+              118.98026280482371,
+              -8.401972721535676
+            ],
+            [
+              119.00442035401184,
+              -8.40735364587766
+            ],
+            [
+              119.02029074175384,
+              -8.42
+            ],
+            [
+              119.78,
+              -8.42
+            ],
+            [
+              119.78,
+              -8.78
+            ],
+            [
+              119.00325666928535,
+              -8.78
+            ],
+            [
+              118.96832716244755,
+              -8.792412530580535
+            ],
+            [
+              118.93371256314197,
+              -8.78
+            ],
+            [
+              118.88,
+              -8.78
+            ],
+            [
+              118.88,
+              -8.610632849587308
+            ],
+            [
+              118.87298424697924,
+              -8.576406477923566
+            ],
+            [
+              118.88,
+              -8.5514274140695
+            ],
+            [
+              118.88,
+              -8.42
+            ],
+            [
+              118.94339026779629,
+              -8.42
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_manupeu_sumba",
+      "properties": {
+        "id": "hutan_manupeu_sumba",
+        "name": "Savana TN Manupeu Tanah Daru (Sumba Timur, NTT)",
+        "forest_type": "Padang Savana Tropis Luas",
+        "province": "Nusa Tenggara Timur",
+        "region": "Bali & Nusa Tenggara",
+        "area_ha": 87984.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 1,
+        "center_lat": -9.75,
+        "center_lon": 119.85,
+        "description": "Lanskap sabana terluas di NTT dengan frekuensi kebakaran padang rumput tahunan yang sangat tinggi."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                120.55140108360034,
+                -9.819451028419774
+              ],
+              [
+                120.52975359704982,
+                -9.859950627201764
+              ],
+              [
+                120.48580897158023,
+                -9.873281083600332
+              ],
+              [
+                120.44530937279823,
+                -9.851633597049819
+              ],
+              [
+                120.43197891639967,
+                -9.807688971580227
+              ],
+              [
+                120.45362640295019,
+                -9.767189372798237
+              ],
+              [
+                120.49757102841978,
+                -9.753858916399668
+              ],
+              [
+                120.53807062720178,
+                -9.775506402950182
+              ],
+              [
+                120.55140108360034,
+                -9.819451028419774
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                119.94293,
+                -9.77996
+              ],
+              [
+                119.94329,
+                -9.81725
+              ],
+              [
+                119.92895,
+                -9.85782
+              ],
+              [
+                119.88289,
+                -9.85045
+              ],
+              [
+                119.85,
+                -9.83021
+              ],
+              [
+                119.81711,
+                -9.85045
+              ],
+              [
+                119.77105,
+                -9.85782
+              ],
+              [
+                119.75671,
+                -9.81725
+              ],
+              [
+                119.75707,
+                -9.77996
+              ],
+              [
+                119.72034,
+                -9.75
+              ],
+              [
+                119.69631,
+                -9.70045
+              ],
+              [
+                119.7335,
+                -9.66602
+              ],
+              [
+                119.77653,
+                -9.64967
+              ],
+              [
+                119.80276,
+                -9.60575
+              ],
+              [
+                119.85,
+                -9.57292
+              ],
+              [
+                119.89724,
+                -9.60575
+              ],
+              [
+                119.92347,
+                -9.64967
+              ],
+              [
+                119.9665,
+                -9.66602
+              ],
+              [
+                120.00369,
+                -9.70045
+              ],
+              [
+                119.97966,
+                -9.75
+              ],
+              [
+                119.94293,
+                -9.77996
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_tambora",
+      "properties": {
+        "id": "hutan_tambora",
+        "name": "Sabana Kaldera TN Gunung Tambora (Bima, NTB)",
+        "forest_type": "Sabana Lereng Gunung & Kaldera",
+        "province": "Nusa Tenggara Barat",
+        "region": "Bali & Nusa Tenggara",
+        "area_ha": 71645.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 2,
+        "center_lat": -8.25,
+        "center_lon": 118.0,
+        "description": "Padang rumput Doro Ncanga di kaki Tambora tempat penggembalaan ternak dengan sabana mudah terbakar."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                117.61899619579043,
+                -8.6934052758609
+              ],
+              [
+                117.58986357985606,
+                -8.657907080635267
+              ],
+              [
+                117.5884328831758,
+                -8.628784580679032
+              ],
+              [
+                117.59739182326184,
+                -8.607155786018824
+              ],
+              [
+                117.63557458067903,
+                -8.581642883175807
+              ],
+              [
+                117.65898541932096,
+                -8.581642883175807
+              ],
+              [
+                117.68498421398118,
+                -8.592821823261847
+              ],
+              [
+                117.7104971168242,
+                -8.631004580679031
+              ],
+              [
+                117.70153817673815,
+                -8.676044213981175
+              ],
+              [
+                117.66335541932096,
+                -8.701557116824192
+              ],
+              [
+                117.61899619579043,
+                -8.6934052758609
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                118.08351,
+                -8.27703
+              ],
+              [
+                118.08383,
+                -8.31068
+              ],
+              [
+                118.07095,
+                -8.34729
+              ],
+              [
+                118.02956,
+                -8.34064
+              ],
+              [
+                118.0,
+                -8.32238
+              ],
+              [
+                117.97044,
+                -8.34064
+              ],
+              [
+                117.92905,
+                -8.34729
+              ],
+              [
+                117.91617,
+                -8.31068
+              ],
+              [
+                117.91649,
+                -8.27703
+              ],
+              [
+                117.88349,
+                -8.25
+              ],
+              [
+                117.86188,
+                -8.20529
+              ],
+              [
+                117.89531,
+                -8.17422
+              ],
+              [
+                117.93398,
+                -8.15946
+              ],
+              [
+                117.95755,
+                -8.11983
+              ],
+              [
+                118.0,
+                -8.09021
+              ],
+              [
+                118.04245,
+                -8.11983
+              ],
+              [
+                118.06602,
+                -8.15946
+              ],
+              [
+                118.10469,
+                -8.17422
+              ],
+              [
+                118.13812,
+                -8.20529
+              ],
+              [
+                118.11651,
+                -8.25
+              ],
+              [
+                118.08351,
+                -8.27703
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_rinjani",
+      "properties": {
+        "id": "hutan_rinjani",
+        "name": "Hutan Lereng Sembalun - TN Gunung Rinjani (NTB)",
+        "forest_type": "Hutan Musim & Savana Sembalun",
+        "province": "Nusa Tenggara Barat",
+        "region": "Bali & Nusa Tenggara",
+        "area_ha": 41330.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 2,
+        "center_lat": -8.42,
+        "center_lon": 116.45,
+        "description": "Lembah Sembalun dan jalur pendakian bukit sabana yang rawan terbakar oleh hembusan angin tenggara."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                115.90905359312882,
+                -8.724073593128807
+              ],
+              [
+                115.95148,
+                -8.7065
+              ],
+              [
+                115.99390640687119,
+                -8.724073593128807
+              ],
+              [
+                116.01148,
+                -8.7665
+              ],
+              [
+                115.99390640687119,
+                -8.808926406871194
+              ],
+              [
+                115.95014,
+                -8.82774
+              ],
+              [
+                115.90771359312882,
+                -8.810166406871193
+              ],
+              [
+                115.89014,
+                -8.76774
+              ],
+              [
+                115.90905359312882,
+                -8.724073593128807
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                116.51345,
+                -8.44053
+              ],
+              [
+                116.50391,
+                -8.4939
+              ],
+              [
+                116.47246,
+                -8.48884
+              ],
+              [
+                116.45,
+                -8.47498
+              ],
+              [
+                116.42754,
+                -8.48884
+              ],
+              [
+                116.39609,
+                -8.4939
+              ],
+              [
+                116.38655,
+                -8.44053
+              ],
+              [
+                116.36147,
+                -8.42
+              ],
+              [
+                116.34505,
+                -8.38604
+              ],
+              [
+                116.37045,
+                -8.36244
+              ],
+              [
+                116.39983,
+                -8.35123
+              ],
+              [
+                116.41774,
+                -8.32113
+              ],
+              [
+                116.45,
+                -8.29864
+              ],
+              [
+                116.48226,
+                -8.32113
+              ],
+              [
+                116.50017,
+                -8.35123
+              ],
+              [
+                116.52955,
+                -8.36244
+              ],
+              [
+                116.55495,
+                -8.38604
+              ],
+              [
+                116.53853,
+                -8.42
+              ],
+              [
+                116.51345,
+                -8.44053
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_bali_barat",
+      "properties": {
+        "id": "hutan_bali_barat",
+        "name": "TN Bali Barat & Prapat Agung (Buleleng, Bali)",
+        "forest_type": "Hutan Musim Kering Monsoonal",
+        "province": "Bali",
+        "region": "Bali & Nusa Tenggara",
+        "area_ha": 19002.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 14,
+        "center_lat": -8.15,
+        "center_lon": 114.48,
+        "description": "Kawasan hutan musim gugur daun habitat Jalak Bali di ujung barat Pulau Dewata."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                114.27031431758596,
+                -8.613199243884065
+              ],
+              [
+                114.25343505054902,
+                -8.647358842344467
+              ],
+              [
+                114.22227324200703,
+                -8.659766013037899
+              ],
+              [
+                114.18653388860005,
+                -8.64655668146015
+              ],
+              [
+                114.17093172443431,
+                -8.61686545936392
+              ],
+              [
+                114.13608650434567,
+                -7.826712014014877
+              ],
+              [
+                114.15178876202638,
+                -7.7928452150946965
+              ],
+              [
+                114.1848033008484,
+                -7.778786190994567
+              ],
+              [
+                114.22302427296349,
+                -7.790760933064563
+              ],
+              [
+                114.24012504639835,
+                -7.82485887650846
+              ],
+              [
+                114.25191796664893,
+                -7.985695800001062
+              ],
+              [
+                114.27031431758596,
+                -8.613199243884065
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                114.523,
+                -8.16392
+              ],
+              [
+                114.51653,
+                -8.20011
+              ],
+              [
+                114.48,
+                -8.18728
+              ],
+              [
+                114.44347,
+                -8.20011
+              ],
+              [
+                114.437,
+                -8.16392
+              ],
+              [
+                114.42001,
+                -8.15
+              ],
+              [
+                114.40889,
+                -8.12697
+              ],
+              [
+                114.44601,
+                -8.10337
+              ],
+              [
+                114.45814,
+                -8.08296
+              ],
+              [
+                114.48,
+                -8.06771
+              ],
+              [
+                114.50186,
+                -8.08296
+              ],
+              [
+                114.51399,
+                -8.10337
+              ],
+              [
+                114.55111,
+                -8.12697
+              ],
+              [
+                114.53999,
+                -8.15
+              ],
+              [
+                114.523,
+                -8.16392
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_rawa_aopa",
+      "properties": {
+        "id": "hutan_rawa_aopa",
+        "name": "Sabana TN Rawa Aopa Watumohai (Konawe, Sultra)",
+        "forest_type": "Sabana Lahan Basah Alami",
+        "province": "Sulawesi Tenggara",
+        "region": "Sulawesi",
+        "area_ha": 105000.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 20,
+        "center_lat": -4.45,
+        "center_lon": 121.95,
+        "description": "Ekosistem sabana dataran rendah terluas di Sulawesi yang mengalami kebakaran musiman berkala."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              122.09002,
+              -4.45
+            ],
+            [
+              122.11597,
+              -4.39587
+            ],
+            [
+              122.07581,
+              -4.35826
+            ],
+            [
+              122.02934,
+              -4.34039
+            ],
+            [
+              122.00101,
+              -4.29242
+            ],
+            [
+              121.95,
+              -4.25656
+            ],
+            [
+              121.89899,
+              -4.29242
+            ],
+            [
+              121.87066,
+              -4.34039
+            ],
+            [
+              121.82419,
+              -4.35826
+            ],
+            [
+              121.78403,
+              -4.39587
+            ],
+            [
+              121.80998,
+              -4.45
+            ],
+            [
+              121.84965,
+              -4.48273
+            ],
+            [
+              121.84926,
+              -4.52347
+            ],
+            [
+              121.86474,
+              -4.56778
+            ],
+            [
+              121.91448,
+              -4.55973
+            ],
+            [
+              121.95,
+              -4.53763
+            ],
+            [
+              121.98552,
+              -4.55973
+            ],
+            [
+              122.03526,
+              -4.56778
+            ],
+            [
+              122.05074,
+              -4.52347
+            ],
+            [
+              122.05035,
+              -4.48273
+            ],
+            [
+              122.09002,
+              -4.45
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_lore_lindu",
+      "properties": {
+        "id": "hutan_lore_lindu",
+        "name": "TN Lore Lindu (Poso & Sigi, Sulteng)",
+        "forest_type": "Hutan Pegunungan Konservasi",
+        "province": "Sulawesi Tengah",
+        "region": "Sulawesi",
+        "area_ha": 217991.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 19,
+        "center_lat": -1.35,
+        "center_lon": 120.15,
+        "description": "Lembah Besoa dan Napu dengan petak-petak padang alang-alang rawan rambatan api perladangan."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              119.93004267946561,
+              -1.9825438358972882
+            ],
+            [
+              119.90285214898552,
+              -1.9734369514391186
+            ],
+            [
+              119.88330723249057,
+              -1.9496002648251485
+            ],
+            [
+              119.78964156661773,
+              -1.6185645205309698
+            ],
+            [
+              119.8189983761069,
+              -0.7666135306646072
+            ],
+            [
+              119.83440383712322,
+              -0.7367048450977564
+            ],
+            [
+              119.86527326454133,
+              -0.7233281432493772
+            ],
+            [
+              119.90147288726511,
+              -0.7355803686007124
+            ],
+            [
+              120.68958288726512,
+              -1.4247203686007126
+            ],
+            [
+              120.7742265983577,
+              -1.5131525217737543
+            ],
+            [
+              120.78557224071385,
+              -1.5449209636030972
+            ],
+            [
+              120.76959331498632,
+              -1.585398477878991
+            ],
+            [
+              120.37055137008747,
+              -1.950143437707661
+            ],
+            [
+              119.93004267946561,
+              -1.9825438358972882
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_bogani",
+      "properties": {
+        "id": "hutan_bogani",
+        "name": "TN Bogani Nani Wartabone (Gorontalo & Sulut)",
+        "forest_type": "Hutan Hujan Tropis Dataran Rendah",
+        "province": "Gorontalo",
+        "region": "Sulawesi",
+        "area_ha": 287115.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 60,
+        "center_lat": 0.55,
+        "center_lon": 123.65,
+        "description": "Taman nasional terluas di semenanjung utara Sulawesi penghasil air dan habitat anoa."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              123.81545,
+              0.49588
+            ],
+            [
+              123.81609,
+              0.42852
+            ],
+            [
+              123.79056,
+              0.35523
+            ],
+            [
+              123.70856,
+              0.36855
+            ],
+            [
+              123.65,
+              0.4051
+            ],
+            [
+              123.59144,
+              0.36855
+            ],
+            [
+              123.50944,
+              0.35523
+            ],
+            [
+              123.49106684338726,
+              0.4079745612278751
+            ],
+            [
+              123.27059661048031,
+              0.34705593516505007
+            ],
+            [
+              123.24184744856899,
+              0.3457208963357536
+            ],
+            [
+              123.21356841290125,
+              0.35908214884727796
+            ],
+            [
+              123.19756495580899,
+              0.3766029606384265
+            ],
+            [
+              123.06139495580899,
+              0.6255129606384265
+            ],
+            [
+              123.05522574890477,
+              0.6621749127265715
+            ],
+            [
+              123.07609223072076,
+              0.694484305823459
+            ],
+            [
+              123.35714796404916,
+              0.8848657704294465
+            ],
+            [
+              124.0752822730225,
+              0.943559925551844
+            ],
+            [
+              124.10809086183875,
+              0.9345848288887734
+            ],
+            [
+              124.12756629247801,
+              0.9066982109217183
+            ],
+            [
+              124.12469567949687,
+              0.8728055060822156
+            ],
+            [
+              123.9296985547923,
+              0.540522704098169
+            ],
+            [
+              123.90709933712124,
+              0.5231698338259225
+            ],
+            [
+              123.81545,
+              0.49588
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_maros",
+      "properties": {
+        "id": "hutan_maros",
+        "name": "Hutan Karst Bantimurung (Maros, Sulsel)",
+        "forest_type": "Hutan Karst & Lindung Perbukitan",
+        "province": "Sulawesi Selatan",
+        "region": "Sulawesi",
+        "area_ha": 43750.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 1,
+        "center_lat": -4.95,
+        "center_lon": 119.75,
+        "description": "Kawasan menara karst terluas kedua di dunia dengan serasah kering di ceruk-ceruk tebing kapur."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                119.81482,
+                -4.97113
+              ],
+              [
+                119.80507,
+                -5.02603
+              ],
+              [
+                119.77295,
+                -5.02083
+              ],
+              [
+                119.75,
+                -5.00656
+              ],
+              [
+                119.72705,
+                -5.02083
+              ],
+              [
+                119.69493,
+                -5.02603
+              ],
+              [
+                119.68518,
+                -4.97113
+              ],
+              [
+                119.65956,
+                -4.95
+              ],
+              [
+                119.64279,
+                -4.91506
+              ],
+              [
+                119.66873,
+                -4.89078
+              ],
+              [
+                119.69875,
+                -4.87925
+              ],
+              [
+                119.71705,
+                -4.84828
+              ],
+              [
+                119.75,
+                -4.82513
+              ],
+              [
+                119.78295,
+                -4.84828
+              ],
+              [
+                119.80125,
+                -4.87925
+              ],
+              [
+                119.83127,
+                -4.89078
+              ],
+              [
+                119.85721,
+                -4.91506
+              ],
+              [
+                119.84044,
+                -4.95
+              ],
+              [
+                119.81482,
+                -4.97113
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                119.77269108360034,
+                -4.563081028419774
+              ],
+              [
+                119.75104359704982,
+                -4.603580627201764
+              ],
+              [
+                119.70709897158022,
+                -4.616911083600332
+              ],
+              [
+                119.66659937279823,
+                -4.595263597049819
+              ],
+              [
+                119.65326891639967,
+                -4.551318971580226
+              ],
+              [
+                119.67491640295019,
+                -4.5108193727982355
+              ],
+              [
+                119.71886102841978,
+                -4.497488916399668
+              ],
+              [
+                119.75936062720177,
+                -4.519136402950181
+              ],
+              [
+                119.77269108360034,
+                -4.563081028419774
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_wasur",
+      "properties": {
+        "id": "hutan_wasur",
+        "name": "Sabana Merauke - TN Wasur (Papua Selatan)",
+        "forest_type": "Sabana Tropis & Lahan Basah Melaleuca",
+        "province": "Papua Selatan",
+        "region": "Maluku & Papua",
+        "area_ha": 413810.0,
+        "risk_level": "Sangat Rawan",
+        "n_hotspots": 125,
+        "center_lat": -8.55,
+        "center_lon": 140.65,
+        "description": "'Serengeti Papua', hamparan sabana kayu putih (Melaleuca) dengan kebakaran rutin musiman saat kemarau."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              140.61512001685492,
+              -8.2
+            ],
+            [
+              140.8629771180308,
+              -8.185875120012666
+            ],
+            [
+              140.89587620747355,
+              -8.2
+            ],
+            [
+              141.05,
+              -8.2
+            ],
+            [
+              141.05,
+              -9.1
+            ],
+            [
+              140.38,
+              -9.1
+            ],
+            [
+              140.38,
+              -8.355843735550216
+            ],
+            [
+              140.3726589490378,
+              -8.326223575387958
+            ],
+            [
+              140.38,
+              -8.301564932471123
+            ],
+            [
+              140.38,
+              -8.2
+            ],
+            [
+              140.61512001685492,
+              -8.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_mappi_asmat",
+      "properties": {
+        "id": "hutan_mappi_asmat",
+        "name": "Lahan Gambut Mappi & Asmat (Papua Selatan)",
+        "forest_type": "Rawa Gambut Pedalaman Papua",
+        "province": "Papua Selatan",
+        "region": "Maluku & Papua",
+        "area_ha": 650000.0,
+        "risk_level": "Rawan",
+        "n_hotspots": 60,
+        "center_lat": -6.85,
+        "center_lon": 139.45,
+        "description": "Hamparan rawa gambut pesisir selatan Papua dengan endapan organik tebal dan keterisolasian tinggi."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                139.29180755975557,
+                -7.494301943215733
+              ],
+              [
+                139.23206434190678,
+                -7.490579623722461
+              ],
+              [
+                139.13817936707045,
+                -7.470618945512727
+              ],
+              [
+                139.10862884030007,
+                -7.435113093415053
+              ],
+              [
+                139.11359936807597,
+                -7.396223808095479
+              ],
+              [
+                139.23475285137133,
+                -7.301423827422263
+              ],
+              [
+                139.37541395423995,
+                -7.209096599816774
+              ],
+              [
+                139.47790891652895,
+                -7.159345629785162
+              ],
+              [
+                139.90910610388778,
+                -7.15667076233938
+              ],
+              [
+                139.9371314922378,
+                -7.1654507625360075
+              ],
+              [
+                139.9533558845099,
+                -7.183922569186608
+              ],
+              [
+                139.95758964727273,
+                -7.217737827150806
+              ],
+              [
+                139.94296426212713,
+                -7.243205628488305
+              ],
+              [
+                139.6630733418206,
+                -7.456119881063772
+              ],
+              [
+                139.29180755975557,
+                -7.494301943215733
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                139.70072,
+                -6.93143
+              ],
+              [
+                139.70169,
+                -7.03279
+              ],
+              [
+                139.66301,
+                -7.14305
+              ],
+              [
+                139.53875,
+                -7.12301
+              ],
+              [
+                139.45,
+                -7.06802
+              ],
+              [
+                139.36125,
+                -7.12301
+              ],
+              [
+                139.23699,
+                -7.14305
+              ],
+              [
+                139.19831,
+                -7.03279
+              ],
+              [
+                139.19928,
+                -6.93143
+              ],
+              [
+                139.10018,
+                -6.85
+              ],
+              [
+                139.03533,
+                -6.71532
+              ],
+              [
+                139.13568,
+                -6.62173
+              ],
+              [
+                139.25178,
+                -6.57729
+              ],
+              [
+                139.32255,
+                -6.45792
+              ],
+              [
+                139.45,
+                -6.3687
+              ],
+              [
+                139.57745,
+                -6.45792
+              ],
+              [
+                139.64822,
+                -6.57729
+              ],
+              [
+                139.76432,
+                -6.62173
+              ],
+              [
+                139.86467,
+                -6.71532
+              ],
+              [
+                139.79982,
+                -6.85
+              ],
+              [
+                139.70072,
+                -6.93143
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hutan_bintuni",
+      "properties": {
+        "id": "hutan_bintuni",
+        "name": "Hutan Pesisir Teluk Bintuni (Papua Barat)",
+        "forest_type": "Hutan Rawa & Dataran Rendah",
+        "province": "Papua Barat",
+        "region": "Maluku & Papua",
+        "area_ha": 260000.0,
+        "risk_level": "Waspada",
+        "n_hotspots": 3,
+        "center_lat": -2.15,
+        "center_lon": 133.55,
+        "description": "Kawasan hutan dataran rendah dan rawa pasang surut di semenanjung kepala burung Papua."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                133.41476580028595,
+                -2.5000869384707967
+              ],
+              [
+                133.41386569184468,
+                -2.5247130746652116
+              ],
+              [
+                133.40131215776205,
+                -2.5459183938353758
+              ],
+              [
+                133.36044699506758,
+                -2.5603328540156944
+              ],
+              [
+                133.1204669419399,
+                -2.4846879439244565
+              ],
+              [
+                133.09344135055068,
+                -2.4560740389724716
+              ],
+              [
+                133.1186481308453,
+                -1.89638070072272
+              ],
+              [
+                133.12590580132797,
+                -1.8729340454463415
+              ],
+              [
+                133.14785049220202,
+                -1.8534895878430253
+              ],
+              [
+                133.18647559542578,
+                -1.8523022321763312
+              ],
+              [
+                133.21441124137093,
+                -1.8790025710908456
+              ],
+              [
+                133.41476580028595,
+                -2.5000869384707967
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                133.70755,
+                -2.2015
+              ],
+              [
+                133.70816,
+                -2.2656
+              ],
+              [
+                133.68385,
+                -2.33534
+              ],
+              [
+                133.60577,
+                -2.32267
+              ],
+              [
+                133.55,
+                -2.28789
+              ],
+              [
+                133.49423,
+                -2.32267
+              ],
+              [
+                133.41615,
+                -2.33534
+              ],
+              [
+                133.39184,
+                -2.2656
+              ],
+              [
+                133.39245,
+                -2.2015
+              ],
+              [
+                133.33018,
+                -2.15
+              ],
+              [
+                133.28943,
+                -2.06482
+              ],
+              [
+                133.35249,
+                -2.00563
+              ],
+              [
+                133.42544,
+                -1.97752
+              ],
+              [
+                133.46991,
+                -1.90203
+              ],
+              [
+                133.55,
+                -1.8456
+              ],
+              [
+                133.63009,
+                -1.90203
+              ],
+              [
+                133.67456,
+                -1.97752
+              ],
+              [
+                133.74751,
+                -2.00563
+              ],
+              [
+                133.81057,
+                -2.06482
+              ],
+              [
+                133.76982,
+                -2.15
+              ],
+              [
+                133.70755,
+                -2.2015
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

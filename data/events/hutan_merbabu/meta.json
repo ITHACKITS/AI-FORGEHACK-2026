@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_merbabu",
+  "hazard": "fire",
+  "name": "Sabana TN Gunung Merbabu (Boyolali, Jateng)",
+  "province": "Jawa Tengah",
+  "region": "Jawa",
+  "forest_type": "Sabana Alpin & Semak Gunung",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -7.45,
+    "longitude": 110.43,
+    "center_lat": -7.45,
+    "center_lon": 110.43
+  },
+  "bbox": [
+    109.73,
+    -8.15,
+    111.13,
+    -6.75
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 3,
+  "description": "Padang rumput puncak yang rentan terbakar saat angin kencang berkecepatan tinggi di musim kemarau.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

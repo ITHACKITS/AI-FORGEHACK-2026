@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_lore_lindu",
+  "hazard": "fire",
+  "name": "TN Lore Lindu (Poso & Sigi, Sulteng)",
+  "province": "Sulawesi Tengah",
+  "region": "Sulawesi",
+  "forest_type": "Hutan Pegunungan Konservasi",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -1.35,
+    "longitude": 120.15,
+    "center_lat": -1.35,
+    "center_lon": 120.15
+  },
+  "bbox": [
+    119.45,
+    -2.05,
+    120.85,
+    -0.65
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 19,
+  "description": "Lembah Besoa dan Napu dengan petak-petak padang alang-alang rawan rambatan api perladangan.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

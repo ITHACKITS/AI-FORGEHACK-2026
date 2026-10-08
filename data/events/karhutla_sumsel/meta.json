@@ -1,0 +1,27 @@
+{
+  "event_id": "karhutla_sumsel",
+  "hazard": "fire",
+  "name": "Karhutla Gambut Sumatera Selatan (OKI)",
+  "province": "Sumatera Selatan",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -4.2614,
+    "longitude": 105.1738,
+    "center_lat": -4.2614,
+    "center_lon": 105.1738
+  },
+  "bbox": [
+    103.439,
+    -4.695,
+    105.994,
+    -3.744
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "total_hotspots": 100,
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "weather": "open_meteo_ensemble_or_live"
+  }
+}

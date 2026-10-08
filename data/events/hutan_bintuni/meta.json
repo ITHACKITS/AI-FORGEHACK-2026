@@ -1,0 +1,30 @@
+{
+  "event_id": "hutan_bintuni",
+  "hazard": "fire",
+  "name": "Hutan Pesisir Teluk Bintuni (Papua Barat)",
+  "province": "Papua Barat",
+  "region": "Maluku & Papua",
+  "forest_type": "Hutan Rawa & Dataran Rendah",
+  "start_utc": "2026-10-06T00:00:00Z",
+  "duration_h": 24.0,
+  "coordinates": {
+    "latitude": -2.15,
+    "longitude": 133.55,
+    "center_lat": -2.15,
+    "center_lon": 133.55
+  },
+  "bbox": [
+    132.85,
+    -2.85,
+    134.25,
+    -1.45
+  ],
+  "source": "NASA FIRMS NRT (Satelit VIIRS SNPP & NOAA-20)",
+  "members_source": "open_meteo_live_forecast_api",
+  "real_hotspots_count": 3,
+  "description": "Kawasan hutan dataran rendah dan rawa pasang surut di semenanjung kepala burung Papua.",
+  "data_status": {
+    "hotspots": "real_nasa_viirs_satellite_live",
+    "source": "NASA EOSDIS FIRMS"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "volcano": "Anak Krakatau",
+  "volcano_code": "262010",
+  "latitude": -6.102,
+  "longitude": 105.423,
+  "summit_elevation_m": 110.0,
+  "color_code": "ORANGE",
+  "issued_utc": "2026-09-05T00:30:00Z",
+  "volcanic_activity_summary": "Continuous eruption episode with continuous tremor and lava fountaining.",
+  "column_height_above_summit_m": null,
+  "column_height_asl_m": null,
+  "plume_top_asl_km": 15.2,
+  "basis": "ash_cloud_top_satellite",
+  "ash_movement_direction": {
+    "upper_layer_50000ft": "southwest",
+    "mid_layer_20000ft": "west",
+    "lower_layer": "east"
+  },
+  "remarks": "Visual observation obscured by fog/darkness, ash column height could not be determined directly from ground station. Satellite observation indicates ash cloud top around 50,000 ft asl.",
+  "source": "Badan Geologi / PVMBG & VAAC Darwin"
+}
