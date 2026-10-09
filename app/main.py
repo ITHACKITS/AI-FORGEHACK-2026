@@ -1,4 +1,4 @@
-﻿"""
+"""
 app/main.py - AI & Atmospheric Dispersion Physics Microservice
 ForgeHack 2026 (ITHACKITS/AI-FORGEHACK-2026)
 """
@@ -14,10 +14,12 @@ from app.schemas.simulation import SimulationRequest
 from app.impact.advisory import generate_emergency_advisory
 from app.impact.gemini_advisory import enrich_advisory_with_gemini
 from app.impact.validation import evaluate_event_validation
+from app.engine.fire_classifier import FireClassifier
+from app.schemas.fire_prediction import FirePointRequest, FireBatchRequest, FirePointResponse, FireBatchResponse
 
 app = FastAPI(
     title="UdaraSiaga AI & Atmospheric Physics Microservice",
-    description="Dedicated microservice for Eulerian-Lagrangian atmospheric dispersion simulation (Mastin 2009, Byram 1959) & Gemini LLM Disaster Advisory Synthesizer.",
+    description="Dedicated microservice for Eulerian-Lagrangian atmospheric dispersion simulation (Mastin 2009, Byram 1959), NASA FIRMS ML Fire Classifier, & Gemini LLM Disaster Advisory Synthesizer.",
     version="2.0.0"
 )
 
@@ -28,6 +30,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+classifier = FireClassifier()
 
 class AdvisoryRequest(BaseModel):
     event_id: str
@@ -50,12 +54,14 @@ def root():
         "competition": "ITHACKITS FORGEHACK 2026",
         "status": "online",
         "models": {
+            "fire_ai_classifier": "Ensemble (Random Forest + Gradient Boosting) trained on 2.4M NASA FIRMS VIIRS Records (2020-2025)",
             "volcano_source": "Mastin (2009) Empirical Eruption Power Law (H = 2.0 * V^0.241)",
             "fire_source": "Byram (1959) Fireline Intensity & Plume Injection",
             "settling": "Stokes Settling with Cunningham Slip Correction",
             "land_mask": "Shapely 2.1 Vectorized Coastline Polygon Index",
             "llm_synthesizer": "Google Gemini 2.5 Flash + Deterministic BNPB/Kemenkes Fallback"
-        }
+        },
+        "fire_model_metadata": classifier.metadata
     }
 
 @app.get("/health")
@@ -106,3 +112,41 @@ def validate_scenario(event_id: str):
         return {"status": "success", "validation": val_res}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/v1/fire/predict", response_model=FirePointResponse)
+def predict_fire_single(req: FirePointRequest):
+    """
+    Prediksi probabilitas kebakaran hutan & tingkat risiko pada 1 titik koordinat.
+    Digunakan oleh Backend/Frontend untuk memeriksa status titik panas di peta.
+    """
+    try:
+        result = classifier.predict_point(
+            latitude=req.latitude,
+            longitude=req.longitude,
+            brightness=req.brightness,
+            frp=req.frp,
+            confidence=req.confidence,
+            is_day=req.is_day
+        )
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Gagal memprediksi titik api: {e}")
+
+@app.post("/api/v1/fire/predict-batch", response_model=FireBatchResponse)
+def predict_fire_batch(req: FireBatchRequest):
+    """
+    Prediksi kumpulan titik koordinat sekaligus (Batch Inference).
+    """
+    try:
+        pts = [p.model_dump() for p in req.points]
+        preds = classifier.predict_batch(pts)
+        fire_count = sum(1 for p in preds if p.get("is_fire"))
+        return {
+            "status": "success",
+            "total_points": len(preds),
+            "fire_detected_count": fire_count,
+            "predictions": preds,
+            "model_metadata": classifier.metadata
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Gagal memprediksi batch titik api: {e}")

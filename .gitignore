@@ -1,4 +1,4 @@
-﻿# Environment & Secrets
+# Environment & Secrets
 .env
 .env.*
 !.env.example
@@ -18,3 +18,10 @@ htmlcov/
 *.log
 .DS_Store
 Thumbs.db
+
+# Data besar - JANGAN push ke GitHub!
+data/*.zip
+data/*.csv
+
+# Model ML binary - download dari Kaggle Notebook output
+app/models/*.pkl
