@@ -1,4 +1,4 @@
-# MEMORY: Standbai AI Service (`AI-FORGEHACK-2026`)
+# MEMORY: StandbAI AI Service (`AI-FORGEHACK-2026`)
 
 > ## Language rule (read first)
 > **Always use English** in this repository: code, comments, prompts, model cards, eval cases' expected outputs, docs, commit messages, and every explanation written by an AI assistant. ForgeHacks is an international hackathon judged in English.
@@ -18,19 +18,28 @@ Shared memory for people and coding agents working on the AI service. Keep **Pro
 | Capability | Endpoint(s) | Status |
 |---|---|---|
 | LLM gateway: Featherless primary, Gemini fallback, template last | internal | Planned (AI-01) |
-| Chat language layer for web + Telegram | `POST /api/v1/chat/interpret`, `POST /api/v1/chat/respond` | Planned (AI-03/04) |
-| Fire-activity outlook (7 days + monthly climatology) | `GET /api/v1/outlook/point`, `/grid` | Planned (AI-06) |
-| History summaries with citations (batch) | `POST /api/v1/history/summarize` | Planned (AI-07) |
+| Chat language layer for web + Telegram | `POST /api/v1/chat/interpret`, `POST /api/v1/chat/respond` | Stretch (AI-03/04; the backend cuts `/chat` today) |
+| Fire-activity outlook (7 days + monthly climatology) | `GET /api/v1/outlook/point`, `/grid` | Planned, **first priority**: baseline first (AI-06 Part A), ML model is stretch (Part B) |
+| History summaries with citations (batch) | `POST /api/v1/history/summarize` | Stretch (AI-07; the backend cuts history today) |
 | Emergency advisory text | `POST /api/v1/advisory` | Broken (AI-02) |
 | FIRMS detection scorer (existing RandomForest) | `POST /api/v1/fire/predict`, `/predict-batch` | Working, needs honest reframing (AI-08) |
 | Dispersion simulation (copy of the backend engine) | `POST /api/v1/simulate`, `/validate` | Present; not used by the web app |
 
-- **Only the Standbai backend calls this service**, sending `X-Internal-Token`.
+- **Only the StandbAI backend calls this service**, sending `X-Internal-Token`.
+
+### Priority order today (re-planned 15:00 WIB)
+1. **AI-08**: classifier honesty fixes.
+2. **AI-06 Part A**: climatology baseline and `/api/v1/outlook/point`. Start the Kaggle job first. This is the only AI output the backend consumes before the freeze.
+3. **AI-01 (a)**: token, `.env`, version pins, so AI-09 (deploy) can go.
+4. **AI-01 (b)** gateway, then **AI-02** advisory fix.
+5. **Stretch:** AI-06 Part B (ML model), AI-03/04/05 (chat), AI-07 (history).
+
+The full table with owners and status is in [`PRD.md`](PRD.md) §9. A slip cuts the stretch items first.
 
 ## 3. Architecture
 ```mermaid
 flowchart LR
-  BE[Standbai API] --> AI[This service · FastAPI · Cloud Run]
+  BE[StandbAI API] --> AI[This service · FastAPI · Cloud Run]
   AI --> FL[Featherless]
   AI -.fallback.-> GM[Gemini]
   AI --> M[(app/models: outlook, classifier)]
@@ -53,6 +62,7 @@ flowchart LR
   - lat/lon-only requests return a default "AMAN / LOW", which needs fixing (AI-08). Verified: probability 0.0 at a Central Kalimantan fire location.
   - scikit-learn 1.6.1 has no Python 3.14 wheel, so run on Python 3.12.
 - **Tests:** 9 passed (`pytest -q`, offline, 2026-10-10).
+- **None of the PRD tickets AI-00…AI-10 is built yet** (checked in the repo at 15:00 WIB): no `app/llm/`, `app/outlook/`, `eval/` or `reports/`; the FastAPI title and `.env.example` still use the old name.
 - **Advisory endpoint broken:** wrong function arguments; old Gemini model ids; key in the URL.
 - **Repo hygiene:**
   - no `config/` directory (the engine copy lacks its assumptions file);
@@ -80,12 +90,14 @@ flowchart LR
 ## 7. Decision log
 | Date | Decision | Why |
 |---|---|---|
-| 2026-10-09 | Product name **Standbai**; English prompts and outputs | International judging |
+| 2026-10-09 | One product name for the platform; English prompts and outputs | International judging |
 | 2026-10-10 | **Featherless** (sponsor, OpenAI-compatible) as the primary LLM; Gemini via its OpenAI-compatible endpoint as fallback; template last | No daily request cap; uses a sponsor perk; one client for both |
 | 2026-10-10 | Chat is a fixed pipeline (interpret → backend tools → respond), not an open agent loop | Bounded, testable, no invented numbers or links |
 | 2026-10-10 | The existing classifier is reframed as a detection scorer; a real 7-day outlook with real negatives replaces it for risk | Synthetic negatives make the old accuracy meaningless for forecasting |
 | 2026-10-10 | Ship the outlook model only if it beats the climatology and persistence baselines; otherwise ship climatology v0, labelled | Honesty over a bigger claim |
 | 2026-10-10 | History summaries are generated in batch and reviewed by a person | Citations must be correct |
+| 2026-10-10 | Product name spelled **StandbAI** (capital "AI"); lower-case identifiers such as `standbai-ai` are unchanged | Team decision |
+| 2026-10-10 15:00 | Re-prioritised: AI-08, then the outlook baseline (AI-06 Part A), then token/pins and the gateway; chat, history and the ML model are stretch | The backend plan cuts `/chat`, advisory rewiring and history today, so the outlook is the only AI output it consumes before the freeze |
 
 ## 8. Links
 - Backend: https://github.com/ITHACKITS/BE-FORGEHACK-2026 · Frontend: https://github.com/ITHACKITS/FE-FORGEHACK-2026

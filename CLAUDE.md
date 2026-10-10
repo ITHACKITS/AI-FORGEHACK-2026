@@ -1,4 +1,4 @@
-# Claude Code: Standbai AI Service
+# Claude Code: StandbAI AI Service
 
 @MEMORY.md
 @AGENTS.md

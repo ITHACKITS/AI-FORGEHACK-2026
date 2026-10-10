@@ -1,6 +1,6 @@
-# Standbai: AI Service
+# StandbAI: AI Service
 
-**The AI layer of Standbai**, a forecast-and-prepare platform for wildfire smoke and volcanic ash in Indonesia. It answers residents' questions in plain words, forecasts fire activity beyond the 3-day plume window, and summarises past events with citations. Every answer is grounded in data, and every model is compared with a simple baseline.
+**The AI layer of StandbAI**, a forecast-and-prepare platform for wildfire smoke and volcanic ash in Indonesia. It answers residents' questions in plain words, forecasts fire activity beyond the 3-day plume window, and summarises past events with citations. Every answer is grounded in data, and every model is compared with a simple baseline.
 
 *ForgeHacks Online 2026 · AI + Climate track*
 
@@ -15,8 +15,8 @@
 
 | Capability | Why it matters | How |
 |---|---|---|
-| **Ask Standbai** (web chat and Telegram bot) | Residents ask "Will smoke reach Jambi this week?" instead of learning an app | Two small LLM steps around deterministic tools: `interpret` turns the message into a structured intent; the backend fetches facts and builds links; `respond` writes ≤3 sentences using only those facts. Numbers and links never come from the model. |
-| **Fire-activity outlook** (next 7 days; monthly climatology for "next month") | The plume engine sees 72 hours ahead; families also plan weeks ahead | Gradient-boosted trees on NASA FIRMS VIIRS 2020–2025, aggregated to 0.25° cells × weeks, trained on 2020–23 and tested on 2025, and compared with climatology and persistence baselines |
+| **Ask StandbAI** (web chat and Telegram bot; stretch goal) | Residents ask "Will smoke reach Jambi this week?" instead of learning an app | Two small LLM steps around deterministic tools: `interpret` turns the message into a structured intent; the backend fetches facts and builds links; `respond` writes ≤3 sentences using only those facts. Numbers and links never come from the model. |
+| **Fire-activity outlook** (next 7 days; monthly climatology for "next month") | The plume engine sees 72 hours ahead; families also plan weeks ahead | NASA FIRMS VIIRS 2020–2025 aggregated to 0.25° cells × weeks. The first version is a **climatology baseline** (how often each cell had fires in the same week and month of 2020–23). A gradient-boosted model, trained on 2020–23 and tested on 2025, replaces it only if it beats the climatology and persistence baselines |
 | **History summaries** (Merapi 2010, 2019 haze) | "What happened last time, and what did people need?" | Batch LLM summaries of news headlines and Wikipedia with numbered citations, reviewed by a person |
 | **Emergency advisory** | Briefing text for schools, health workers and the public after a simulation | Deterministic expert template, optionally rephrased by the LLM |
 | **FIRMS detection scorer** | Scores satellite fire detections | RandomForest on detection features (see limits below) |
@@ -36,17 +36,18 @@ The **Status** column is updated at submission time to what actually runs.
 |---|---|
 | Dispersion simulation endpoint (shared engine with the backend) | Working (`pytest`: 9 passed, 2026-10-10) |
 | FIRMS detection scorer `/api/v1/fire/predict`, `/predict-batch` | Working, being reframed (see limits) |
-| Emergency advisory `/api/v1/advisory` | Being fixed |
-| LLM gateway (Featherless → Gemini → template) | In progress |
-| Fire-activity outlook `/api/v1/outlook/*` + model card | In progress |
-| Chat interpret/respond + evaluation set | Planned (optional chat) |
-| History summaries | Planned |
+| Emergency advisory `/api/v1/advisory` | Broken today; fix planned |
+| LLM gateway (Featherless → Gemini → template) | Planned |
+| Fire-activity outlook: climatology baseline `/api/v1/outlook/point` + model card | Planned (first priority) |
+| Fire-activity outlook: ML model | Planned (stretch; roadmap if not ready) |
+| Chat interpret/respond + evaluation set | Stretch (only if the items above are done) |
+| History summaries | Stretch |
 
 ## Architecture
 
 ```mermaid
 flowchart LR
-  BE[Standbai API] -->|X-Internal-Token| API[AI service · FastAPI]
+  BE[StandbAI API] -->|X-Internal-Token| API[AI service · FastAPI]
   API --> GW[LLM gateway]
   GW --> FL[Featherless]
   GW -.fallback.-> GM[Gemini]

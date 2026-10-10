@@ -1,4 +1,4 @@
-# SETUP: Standbai AI Service
+# SETUP: StandbAI AI Service
 
 ## Prerequisites
 - **Python 3.12** (recommended). The fire-scorer pickle was made with scikit-learn 1.6.1, which has no wheel for Python 3.14. On 3.14, a newer scikit-learn loads it with an `InconsistentVersionWarning`.
@@ -52,7 +52,9 @@ python test_fire_ai.py                      # manual check of the fire scorer (m
 ## Training
 
 - **Existing detection scorer:** `kaggle_train.py` runs on Kaggle with the NASA FIRMS dataset attached (`/kaggle/input`), writes `fire_predictor_global.pkl`, and you copy it to `app/models/`. `train_fire_model.py` is stale (AI-08).
-- **Fire-activity outlook (AI-06):** `app/outlook/train.py` (to be written) aggregates FIRMS to cell × week, trains with a time-based split, writes `app/models/outlook_v1.joblib`, the cell and climatology Parquet files, and `reports/outlook_metrics.json`. Run it on Kaggle where the data lives, and commit only the small artifacts.
+- **Fire-activity outlook (AI-06), planned in two parts.** Run it on Kaggle where the data lives, and commit only the small artifacts.
+  - **Part A, baseline (first priority):** aggregate FIRMS to cell × week, compute the same-week and same-month climatology from 2020–2023, and write `app/models/outlook_cells.parquet`, `app/models/climatology_monthly.parquet` and `reports/outlook_metrics.json`. The service then answers `/api/v1/outlook/point` with `model: "climatology_v0"`.
+  - **Part B, ML model (stretch):** `app/outlook/train.py` (to be written) trains with a time-based split and writes `app/models/outlook_v1.joblib`. It ships only if it beats both baselines.
 - **Never commit raw data:** `data/*.zip` and `data/*.csv` are git-ignored.
 
 ## Deploy to Google Cloud Run (ticket AI-09, Hikari)
