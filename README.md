@@ -1,107 +1,108 @@
-﻿# 🌪️ UdaraSiaga AI & Atmospheric Physics Engine — ITHACKITS FORGEHACK 2026
+# Standbai: AI Service
 
-**Repository Resmi: Numerical Physics Dispersion Models & Generative AI Disaster Synthesizer**
+**The AI layer of Standbai**, a forecast-and-prepare platform for wildfire smoke and volcanic ash in Indonesia. It answers residents' questions in plain words, forecasts fire activity beyond the 3-day plume window, and summarises past events with citations. Every answer is grounded in data, and every model is compared with a simple baseline.
 
-Repository ini menyediakan modul komputasi ilmiah dan kecerdasan buatan untuk pemodelan dispersi partikulat atmosfer (abu vulkanik & asap kebakaran hutan dan lahan/karhutla) serta sintesis darurat berbasis Large Language Model (Google Gemini 2.5 Flash & Sistem Pakar Deterministik BNPB/Kemenkes).
+*ForgeHacks Online 2026 · AI + Climate track*
 
----
-
-## 🔬 Fondasi Saintifik & Model Fisika
-
-1. **Pemodelan Erupsi Gunung Api (Mastin et al., 2009)**
-   - Perumusan empiris laju erupsi massa (*Mass Eruption Rate* / MER):
-     $$H = 2.0 \cdot \dot{V}^{0.241}$$
-   - Profil distribusi konsentrasi vertikal Suzuki.
-   - Spektrum ukuran butir (*Grain Size Distribution*) dari partikel kasar hingga debu respirabel ($PM_{2.5}$ & $PM_{10}$).
-
-2. **Pemodelan Karhutla (Byram, 1959)**
-   - *Fireline Intensity* & laju pelepasan kalor (*Heat Release Rate* / HRR).
-   - Injeksi asap termal dan emisi $PM_{2.5}$ berdasarkan FRP (*Fire Radiative Power*) satelit NASA FIRMS.
-
-3. **Dinamika Partikel & Transpor Atmosferik**
-   - Transpor Eulerian-Lagrangian dengan adveksi vektor angin (integrasi numerik Runge-Kutta Orde-2 / RK2).
-   - Difusi turbulen atmosferik vertikal & horizontal.
-   - *Stokes Settling Velocity* dilengkapi faktor koreksi slip Cunningham (*Cunningham Slip Correction Factor*) untuk partikel mikron sub-mikron.
-   - *Wet Scavenging*: Pencucian partikel oleh presipitasi hujan ($\Lambda$ scavenging coefficient).
-
-4. **Masking Spasial & Integritas Daratan (LandMask Engine)**
-   - Indeks spasial poligon daratan Indonesia vektor Shapely 2.1 (`indonesia_coastline.geojson`).
-   - Mencegah artefak populasi atau fasilitas fiktif di perairan/laut.
-
-5. **AI Emergency Briefing & LLM Advisory Synthesizer**
-   - **Google Gemini 2.5 Flash**: Menghasilkan draf siaran pers resmi PUSDALOPS BPBD, broadcast darurat WhatsApp warga, dan protokol medis APD respirasi.
-   - **Deterministic Fallback Synthesizer**: Menjamin ketersediaan rekomendasi terstandarisasi Permenkes & BNPB bahkan saat jaringan offline.
+| | |
+|---|---|
+| Backend API (the only caller) | [BE-FORGEHACK-2026](https://github.com/ITHACKITS/BE-FORGEHACK-2026) |
+| Web app | [FE-FORGEHACK-2026](https://github.com/ITHACKITS/FE-FORGEHACK-2026) |
 
 ---
 
-## 🚀 Panduan Memulai Cepat (Quickstart)
+## What the AI does, and why
 
-### 1. Instalasi Dependensi
-```bash
-pip install -r requirements.txt
+| Capability | Why it matters | How |
+|---|---|---|
+| **Ask Standbai** (web chat and Telegram bot) | Residents ask "Will smoke reach Jambi this week?" instead of learning an app | Two small LLM steps around deterministic tools: `interpret` turns the message into a structured intent; the backend fetches facts and builds links; `respond` writes ≤3 sentences using only those facts. Numbers and links never come from the model. |
+| **Fire-activity outlook** (next 7 days; monthly climatology for "next month") | The plume engine sees 72 hours ahead; families also plan weeks ahead | Gradient-boosted trees on NASA FIRMS VIIRS 2020–2025, aggregated to 0.25° cells × weeks, trained on 2020–23 and tested on 2025, and compared with climatology and persistence baselines |
+| **History summaries** (Merapi 2010, 2019 haze) | "What happened last time, and what did people need?" | Batch LLM summaries of news headlines and Wikipedia with numbered citations, reviewed by a person |
+| **Emergency advisory** | Briefing text for schools, health workers and the public after a simulation | Deterministic expert template, optionally rephrased by the LLM |
+| **FIRMS detection scorer** | Scores satellite fire detections | RandomForest on detection features (see limits below) |
+
+### LLM providers
+- **Primary: Featherless AI** (a ForgeHacks sponsor). It serves open models through an OpenAI-compatible API.
+- **Fallback: Google Gemini**, through its OpenAI-compatible endpoint.
+- **Last resort: a deterministic template reply.**
+
+Each answer reports which `engine` produced it. The model ids and the evaluation table are added here after the evaluation run (PRD ticket AI-05).
+
+## Status
+
+The **Status** column is updated at submission time to what actually runs.
+
+| Feature | Status |
+|---|---|
+| Dispersion simulation endpoint (shared engine with the backend) | Working (`pytest`: 9 passed, 2026-10-10) |
+| FIRMS detection scorer `/api/v1/fire/predict`, `/predict-batch` | Working, being reframed (see limits) |
+| Emergency advisory `/api/v1/advisory` | Being fixed |
+| LLM gateway (Featherless → Gemini → template) | In progress |
+| Fire-activity outlook `/api/v1/outlook/*` + model card | In progress |
+| Chat interpret/respond + evaluation set | Planned (optional chat) |
+| History summaries | Planned |
+
+## Architecture
+
+```mermaid
+flowchart LR
+  BE[Standbai API] -->|X-Internal-Token| API[AI service · FastAPI]
+  API --> GW[LLM gateway]
+  GW --> FL[Featherless]
+  GW -.fallback.-> GM[Gemini]
+  API --> OUT[Outlook model]
+  API --> CLS[Detection scorer]
+  API --> SIM[Dispersion engine copy]
 ```
 
-### 2. Konfigurasi Environment
-```bash
-cp .env.example .env
-# Masukkan GEMINI_API_KEY Anda di file .env
-```
+## Endpoints
 
-### 3. Menjalankan AI Microservice
-```bash
-uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload
-```
-Aplikasi akan aktif di **http://localhost:8001**.
-Dokumentasi interaktif OpenAPI / Swagger dapat diakses di **http://localhost:8001/docs**.
+| Method | Path | Purpose |
+|---|---|---|
+| GET | `/`, `/health` | Service info and status |
+| POST | `/api/v1/simulate` | Run a dispersion simulation (copy of the backend engine) |
+| POST | `/api/v1/advisory` | Emergency advisory text |
+| POST | `/api/v1/validate` | Event validation |
+| POST | `/api/v1/fire/predict`, `/api/v1/fire/predict-batch` | Score FIRMS detections (needs brightness, FRP or confidence) |
+| GET | `/api/v1/outlook/point`, `/api/v1/outlook/grid` | Fire-activity outlook (planned) |
+| POST | `/api/v1/chat/interpret`, `/api/v1/chat/respond` | Chat language layer (planned) |
+| POST | `/api/v1/history/summarize` | Past-event summaries (planned) |
 
-### 4. Menjalankan Suite Pengujian Fisika
-```bash
-pytest tests -v
-```
-Seluruh 9 pengujian numerik dan sintesis darurat terverifikasi 100% lulus.
+Interactive docs at `/docs` when running.
 
----
+## Models and their limits
 
-## 📁 Struktur Direktori
+- **FIRMS detection scorer** (`app/models/fire_predictor_global.pkl`):
+  - Its negatives were *synthetic* random points with zero fire power, so it separates "looks like a satellite detection" from "random cold point". Its in-sample accuracy says nothing about forecasting fires.
+  - It **isn't a location risk forecast**. Sent only a latitude and longitude, today's code returns "low" even inside active fire areas; this is being changed to return "not available".
+  - Use the outlook for risk.
+- **Fire-activity outlook:** the model card (`docs/MODEL_CARD_outlook.md`) will hold the data, the time-based split, the metrics versus baselines and the thresholds. If the model doesn't beat the climatology baseline, we ship the climatology baseline and say so.
+- **LLM answers:**
+  - limited to facts supplied by the backend;
+  - they can still phrase things imperfectly;
+  - they're never an official warning.
 
-```text
-AI-FORGEHACK-2026/
-├── app/
-│   ├── engine/             # Komputasi numerik dispersi atmosfer
-│   │   ├── simulator.py    # Orkestrator simulasi Lagrangian-Eulerian
-│   │   ├── volcano.py      # Mastin 2009 MER & distribusi partikel erupsi
-│   │   ├── fire.py         # Byram 1959 Fireline intensity & emisi karhutla
-│   │   ├── particles.py    # RK2 adveksi partikel & Stokes settling
-│   │   ├── grid.py         # Grid konsentrasi & IDW interpolation
-│   │   ├── landmask.py     # Shapely 2.1 vectorized spatial index daratan
-│   │   ├── scavenging.py   # Rain washout kinetics
-│   │   └── aggregation.py  # Agregasi probabilitas P90/P50/P05
-│   ├── impact/             # Analisis dampak & sintesis AI
-│   │   ├── gemini_advisory.py # Google Gemini 2.5 Flash LLM synthesizer
-│   │   ├── advisory.py     # Deterministic expert synthesizer BNPB/Kemenkes
-│   │   ├── exposure.py     # Matriks kerentanan & populasi terpapar
-│   │   ├── volcano_features.py # Dampak sawah & sumber air daratan
-│   │   ├── fire_features.py# Dampak lahan gambut & kawasan konservasi
-│   │   ├── comparative.py  # Analisis delta skenario multi-bahaya
-│   │   └── validation.py   # Validasi konsistensi saintifik
-│   ├── core/               # Konfigurasi, RNG, offline mode guards
-│   ├── schemas/            # Pydantic schemas kontrak request & response
-│   ├── ingest/             # Klien meteorologi Open-Meteo & FIRMS
-│   └── main.py             # FastAPI entry point microservice (Port 8001)
-├── data/
-│   ├── layers/             # Data geospasial garis pantai & gunung api
-│   └── events/             # Presets observasi lapangan (Anak Krakatau, Kalimantan)
-├── tests/
-│   ├── test_physics.py     # Uji kekekalan massa, adveksi RK2, Mastin MER
-│   └── test_advisory.py    # Uji sintesis rekomendasi darurat AI
-├── requirements.txt
-├── pytest.ini
-└── README.md
-```
+## Documentation
 
----
+| File | Purpose |
+|---|---|
+| [`SETUP.md`](SETUP.md) | Install, run, test, train, deploy |
+| [`PRD.md`](PRD.md) | Requirements, prompts, contracts and the task board |
+| [`MEMORY.md`](MEMORY.md) | Context, conventions and decision log |
+| [`AGENTS.md`](AGENTS.md) | Rules for coding agents and contributors |
 
-## 🔗 Keterhubungan Komponen ForgeHack 2026
+## Data and credits
 
-- **Frontend Command Center:** [FE-FORGEHACK-2026](https://github.com/ITHACKITS/FE-FORGEHACK-2026)
-- **Backend API Gateway:** [BE-FORGEHACK-2026](https://github.com/ITHACKITS/BE-FORGEHACK-2026)
+- NASA FIRMS (VIIRS S-NPP) fire detections, from the 2020–2025 Kaggle export.
+- Open-Meteo weather (rainfall features).
+- News headlines and Wikipedia for history summaries: we link to the original publishers and don't store article text.
+- Featherless AI and Google Gemini for language generation.
+
+## Team
+
+| Person | Role |
+|---|---|
+| Arkan Zahir | AI |
+| Hikari Reiziq | Backend API and platform (deploys this service) |
+| Arya Bisma | Backend engine and data |
+| Ziddan Habibie | Frontend |
