@@ -70,6 +70,8 @@ flowchart LR
   - Indonesian README and comments;
   - `train_fire_model.py` is stale.
 
+- **2026-10-10 21:35 WIB, branch `feat/llm-brief`:** `POST /api/v1/brief` (`app/llm/brief.py`): Featherless gateway. Primary `Qwen/Qwen3.6-35B-A3B` (thinking off, ~4-6 s), fallback `Qwen/Qwen3.5-9B`, then a deterministic template; 12 s timeout; at most 2 LLM calls. The prompt allows only numbers from the backend facts and actions from a fixed EN/ID playbook (masks, water, medicine, closed rooms; prevention: water the ground, clear dry litter, no burning, firebreaks, report early). Responses name the `engine` and `model`. Key: `FEATHERLESS_API_KEY` in `.env` (git-ignored); rotate it after the event because it was pasted in a chat. GLM-5.3-Flash ignores `enable_thinking: false` and returned no content; Gemma-4-31B took 15-21 s.
+
 ## 6. Conventions
 - **Models and metrics:**
   - time-based splits only;

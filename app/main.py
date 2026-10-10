@@ -16,6 +16,7 @@ from app.impact.gemini_advisory import enrich_advisory_with_gemini
 from app.impact.validation import evaluate_event_validation
 from app.engine.fire_classifier import FireClassifier
 from app.schemas.fire_prediction import FirePointRequest, FireBatchRequest, FirePointResponse, FireBatchResponse
+from app.llm.brief import BriefRequest, generate_brief
 
 app = FastAPI(
     title="UdaraSiaga AI & Atmospheric Physics Microservice",
@@ -112,6 +113,15 @@ def validate_scenario(event_id: str):
         return {"status": "success", "validation": val_res}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/v1/brief")
+def household_brief(req: BriefRequest):
+    """
+    Household safety brief for one location, written by the Featherless LLM from facts the
+    backend computed (template fallback). Every number in the text comes from those facts.
+    """
+    return generate_brief(req)
+
 
 @app.post("/api/v1/fire/predict", response_model=FirePointResponse)
 def predict_fire_single(req: FirePointRequest):
