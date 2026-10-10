@@ -21,6 +21,10 @@ uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload --env-file .env
 - Service: http://localhost:8001
 - Interactive docs: http://localhost:8001/docs
 
+## Run the whole stack with Docker
+
+To run the backend, AI service and web app together, clone the three repos side by side and use the Compose file in the backend repo: see [`BE-FORGEHACK-2026/SETUP.md`](https://github.com/ITHACKITS/BE-FORGEHACK-2026/blob/main/SETUP.md#run-the-full-stack-with-docker-compose-be--ai--fe).
+
 ## Environment variables
 
 **Read by the code on `main` today:**
